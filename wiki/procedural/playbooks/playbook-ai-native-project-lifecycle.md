@@ -43,18 +43,19 @@ last_updated: 2026-09-16
   4. What constraints exist (timeline, word count, non-negotiables, sensitive stances)?
 - **Committed Artifact**: `intent.md`
 
-### Stage 2: Scope → Lock Structure in `spec.md`
+### Stage 2: Scope & Synthesis → Lock Structure in `spec.md`
 - **Objective**: Compress requirements, section outlines, tone, and evidence sources into one working session before drafting begins.
+- **Synthesis Requirement for Deep Research**: For research studies or whitepapers, this stage MUST include the creation of an Evidence Matrix or a Synthesis document. Agents should cross-reference `wiki/semantic/sources/` to build a grounded factual baseline before any drafting starts.
 - **The Split Rule**:
   - *Skip `spec.md`* for quick, low-stakes memos (merge into `intent.md`).
   - *Keep `spec.md`* for high-stakes deliverables (policy briefs, whitepapers, curricula). If a wrong assumption would cost >1 hour to unwind, write the spec.
-- **Committed Artifact**: `spec.md`
+- **Committed Artifact**: `spec.md` (and optional `evidence-matrix.md` for Deep Track)
 
 ### Stage 3: Draft → Agent Drafts; Human Supplies Judgment in `draft.md`
 - **Objective**: Generate the full draft at agent speed while anchoring strictly to project `context.md` and relevant certified skills.
 - **Rules of Engagement**:
-  - The human directs, supplies grounded sources, and evaluates arguments.
-  - The agent produces sentences, structures arguments, and embeds citations to `wiki/semantic/sources/`.
+  - The human directs, supplies grounded sources (centrally managed in `raw/literature/` and referenced via `wiki/semantic/sources/`), and evaluates arguments.
+  - The agent produces sentences, structures arguments, and embeds citations.
   - Maintain a project `context.md` file so every session can start cold without re-briefing.
 - **Committed Artifact**: `draft.md`
 

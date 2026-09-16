@@ -133,3 +133,21 @@ Append-only record of all ingestions, perspective maps, tutoring sessions, learn
   - Comparison: `wiki/semantic/comparisons/india-global-ai-landscape-comparison-2026.md` (India vs. China vs. US vs. EU)
 - **Step 4: Dashboard Updates** — Updated `projects/README.md`, master `index.md`, and this `log.md`.
 - **Expert Reviewers**: Saurabh Bodas (Compute), Mihir Shete (Geopolitics), Abhishek Suryawanshi (Economics), Rohan Katepallewar (Education).
+
+## [2026-09-16] ingest | Literature Download Execution & Working Memory Expansion
+- **Primary Source Downloads (`download_literature.py`)**:
+  - Built and executed automated downloader saving primary literature directly into project literature folders:
+    - `projects/research-ai-in-india/literature/`: Downloaded 6/6 sources including full official PDFs (*NITI Aayog Responsible AI Strategy* [3.3 MB], *NITI Aayog National AI Strategy* [3.5 MB], PIB Cabinet Approval [159 KB], IndiaAI Portal [847 KB], MeitY ISM [3 KB], and DRDO Portal [410 KB]). Generated `_manifest.json` and `README.md`.
+    - `projects/teacher-training-high-school-ai-pedagogy/literature/`: Downloaded 4 foundational sources (*UNESCO AI Competency Framework* [82 KB], *Wharton / Mollick Socratic Tutoring* [128 KB], *Singapore MOE EdTech Masterplan* [116 KB], and *CBSE AI Portal* [10 KB]). Generated `_manifest.json` and `README.md`.
+- **Semantic Memory Ingestion**:
+  - Created core concept node: `wiki/semantic/concepts/socratic-ai-pedagogy-and-cognitive-offloading.md` (Performance paradox, cognitive deskilling, Mollick's 7 prompt models, Bloom's 2-sigma shift, and international K-12 AI policies).
+- **Working Memory Ingestion (`wiki/working/`)**:
+  - Created Learning Primers in `wiki/working/learning/`:
+    - `primer-high-school-teacher-ai-literacy-pedagogy.md`: 4-module training roadmap for secondary school principals and educators.
+    - `primer-ai-in-india-landscape-2026.md`: Executive policy briefing on India's DPI-first model, ₹10,372 Cr IndiaAI Mission, 38,000 GPUs, BharatGen, and Sarvam AI.
+  - Created NotebookLM Bridge Packs in `wiki/working/notebooklm/`:
+    - `pack-teacher-ai-pedagogy.md`: Bundled source manifest, prompt blueprint for audio podcast discussion, and probing study questions.
+    - `pack-ai-in-india-2026.md`: Bundled source manifest, audio overview blueprint for geopolitical debate, and policy analysis prompts.
+- **Dashboard Synchronization**:
+  - Catalogued all new concepts, primers, packs, and project literature archives in master dashboard `index.md`.
+

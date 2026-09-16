@@ -38,9 +38,10 @@ Welcome to the **Master Hub** of the **JP AI Future Study Group** (Jnana Prabodh
   13. *12-Aug-2026*: [[meeting-13-ai-with-chinese-characteristics|AI with Chinese Characteristics]] (Mihir Shete)
 
 ### B. 🌐 Semantic Memory (`wiki/semantic/`)
-- **Core Concepts**: [[compute-capacity-and-energy]], [[digital-public-infrastructure-for-ai]], [[ai-cybersecurity-and-critical-infrastructure]], [[ai-cognitive-revolution-and-human-agency]], [[voice-ai-and-foundational-education-india]], [[neuroscience-ai-and-brain-computer-interfaces]], [[llm-internals-and-reward-hacking]], [[physical-ai-robotics-and-world-models]], [[genai-creativity-and-knowledge-work-economics]], [[it-bpo-workforce-automation]], [[indic-foundation-models]], [[informal-economy-ai-enablement]], [[human-agency-and-ai-alignment]], [[bias-and-multilingual-fairness]], [[ai-governance-india|India AI Governance & Seven Sutras]], [[india-semiconductor-and-hardware-sovereignty|India Semiconductor & Hardware Sovereignty]], [[india-defense-ai-applications|India Defense AI Applications]].
+- **Core Concepts**: [[compute-capacity-and-energy]], [[digital-public-infrastructure-for-ai]], [[ai-cybersecurity-and-critical-infrastructure]], [[ai-cognitive-revolution-and-human-agency]], [[socratic-ai-pedagogy-and-cognitive-offloading|Socratic AI Pedagogy & Cognitive Offloading]], [[voice-ai-and-foundational-education-india]], [[neuroscience-ai-and-brain-computer-interfaces]], [[llm-internals-and-reward-hacking]], [[physical-ai-robotics-and-world-models]], [[genai-creativity-and-knowledge-work-economics]], [[it-bpo-workforce-automation]], [[indic-foundation-models]], [[informal-economy-ai-enablement]], [[human-agency-and-ai-alignment]], [[bias-and-multilingual-fairness]], [[ai-governance-india|India AI Governance & Seven Sutras]], [[india-semiconductor-and-hardware-sovereignty|India Semiconductor & Hardware Sovereignty]], [[india-defense-ai-applications|India Defense AI Applications]].
 - **Key Entities**: [[bharatgen]], [[indiaai-mission]], [[bhashini]], [[niti-aayog-ai]], [[ai4bharat]], [[sarvam-ai|Sarvam AI]].
 - **Grounded Evidence Vault & Evaluated Literature**:
+  *(Primary downloads and evaluated summaries are centrally stored in `raw/literature/` and linked to `wiki/semantic/sources/`)*
   - [[indiaai-mission-cabinet-approval-2024|Cabinet Approval of ₹10,372 Crore IndiaAI Mission (2024)]]
   - [[source-indiaai-mission-progress-2024-2026|IndiaAI Mission Implementation Progress (2024–2026)]] *(Score: 4.8/5.0)*
   - [[source-india-ai-governance-guidelines-2025|India AI Governance Guidelines 2025: Seven Sutras]] *(Score: 4.8/5.0)*
@@ -69,8 +70,9 @@ Welcome to the **Master Hub** of the **JP AI Future Study Group** (Jnana Prabodh
 - [[good-vs-bad-ai-safety-and-acceleration|Good vs. Bad AI: Existential Safety vs Accelerative Proliferation]]
 
 ### D. ⚡ Working Memory (`wiki/working/`)
-- **Learning Primers**: [[primer-sovereign-compute-india]], [[curriculum-ai-and-future-of-humanity-india]], [[socratic-guide-dpi-for-ai]].
-- **NotebookLM Packs**: [[pack-india-sovereign-ai]], [[pack-labor-and-future-of-work]].
+- **Incubation & Pre-Project Synthesis**: Collaborative scratchpads for synthesizing seminar learnings before they become formal projects. *(See: [`wiki/working/incubation/`](./wiki/working/incubation/))*
+- **Learning Primers**: [[primer-sovereign-compute-india]], [[primer-high-school-teacher-ai-literacy-pedagogy|High School Teacher AI Literacy & Socratic Pedagogy]], [[primer-ai-in-india-landscape-2026|AI in India Landscape (2024–2026)]], [[curriculum-ai-and-future-of-humanity-india]], [[socratic-guide-dpi-for-ai]].
+- **NotebookLM Packs**: [[pack-india-sovereign-ai]], [[pack-teacher-ai-pedagogy|Teacher AI Pedagogy Pack]], [[pack-ai-in-india-2026|AI in India 2026 Pack]], [[pack-labor-and-future-of-work]].
 
 ### E. 🛠️ Procedural Memory (`wiki/procedural/`)
 - **Operational Playbooks**:
@@ -101,6 +103,7 @@ Welcome to the **Master Hub** of the **JP AI Future Study Group** (Jnana Prabodh
 
 ## 🤖 4. Governed Agent Skills (`.agents/skills/`)
 - `ai-native-project-engine`: Orchestrates stages 1 through 6, scaffolding projects, and advancing committed files.
+- `expert-peer-review`: Critical expert review checklist (factual correctness, clarity, international-class quality) for Stage 4.
 - `literature-survey`: Multi-source literature survey, 4-factor scoring (relevance, depth, source quality, actionability), text archiving, and project matrix synthesis.
 - `skill-certification-pipeline`: Detects repeated corrections, extracts rules, and routes candidate skills to domain leads.
 - `ingest-and-source`: Ingestion of raw sources into episodic and semantic tiers.

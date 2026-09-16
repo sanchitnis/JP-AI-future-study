@@ -23,6 +23,11 @@ Skip the split for quick, low-stakes documents — a short internal note, a rout
 Keep the split for anything with real stakes or length — a concept note, a policy brief, a curriculum framework. Without a locked spec, scope drifts mid-draft: the agent generates pages against an ambiguous brief, and you end up unwinding structure instead of reviewing content. The five minutes spent agreeing scope up front is cheaper than the rewrite later.
 Rule of thumb: if a wrong assumption about scope would cost you more than an hour of rework to fix, write the spec.
 
+Two Tracks: Fast vs. Deep
+Depending on the complexity, projects fall into one of two tracks:
+- **Fast Track (Memos, Briefs, Agendas)**: Uses the standard 6 stages linearly.
+- **Deep Track (Whitepapers, Research Studies)**: Requires an added Synthesis step in Stage 2, and an iterative Peer Review sub-loop in Stage 4.
+
 The six stages, translated
 1. Envision → Capture an intent.md
 Traditional: ideas get discussed in meetings, then someone eventually writes a proposal from memory. AI-native: as soon as an idea, problem, or opportunity surfaces, capture it in a short file — what's the pain point, who's affected, what does "done" look like, what constraints exist. This becomes the seed the agent works from, not a mental note you'll have to reconstruct later.
@@ -37,6 +42,7 @@ Traditional: the human writes; documentation and rationale get added afterward, 
 
 4. Review → Verify continuously, not at one big gate
 Traditional: the whole draft gets reviewed once, near the end, by whoever has time. AI-native: build small checks into the process as you go — does this claim have a source, does this section answer the brief, does this contradict an earlier document. Give the agent a feedback loop (how to tell if a draft is good) rather than saving all judgment for a single final read.
+*For Deep Track Projects (Iterative Review Sub-loop)*: Whitepapers require rigorous peer review. Instead of a single pass, establish a `Draft <-> Review` cycle (e.g., `draft-v1.md` -> `review-v1.md` -> `draft-v2.md`). The agent performs the initial Red Team critique using the `expert-peer-review` skill, which is logged and approved by the human expert before revising.
 
 5. Publish → Layered review, human attention on what matters
 Traditional: every version gets read start to finish by a senior reviewer. AI-native: let the agent do first-pass review (consistency, completeness, tone, factual gaps) and reserve your own attention for the parts that need real judgment — framing, political sensitivity, strategic implications. This is also the point where you formally "commit" the artifact: publish the report, submit the note, circulate the brief. Keep a light approval gate (a quick check before anything goes out) rather than a heavy one.

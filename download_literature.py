@@ -230,7 +230,7 @@ def download_with_curl(url: str, dest_path: Path, timeout: int = 30) -> dict:
 
 def download_project_literature(project_slug: str, sources: list) -> list:
     """Download all registered literature sources for a project track."""
-    lit_dir = PROJECTS_DIR / project_slug / "literature"
+    lit_dir = RAW_LIT_DIR
     lit_dir.mkdir(parents=True, exist_ok=True)
 
     print(f"\n{'='*75}")
@@ -271,13 +271,12 @@ def download_project_literature(project_slug: str, sources: list) -> list:
     return results
 
 
-def write_project_manifest_and_readme(project_slug: str, results: list):
-    """Write _manifest.json and README.md in the project's literature/ folder."""
-    lit_dir = PROJECTS_DIR / project_slug / "literature"
+def write_global_manifest_and_readme(results: list):
+    """Write _manifest.json and README.md in the raw/literature/ folder."""
+    lit_dir = RAW_LIT_DIR
 
     # 1. Manifest JSON
     manifest = {
-        "project": project_slug,
         "last_download_run": time.strftime("%Y-%m-%dT%H:%M:%S"),
         "total_sources": len(results),
         "downloaded": sum(1 for r in results if r["status"] == "downloaded"),
@@ -291,14 +290,13 @@ def write_project_manifest_and_readme(project_slug: str, results: list):
 
     # 2. Markdown README
     lines = [
-        f"# Literature Survey Source Archive: `{project_slug}`",
+        f"# Central Literature Archive: `raw/literature/`",
         "",
-        f"> **Project Track**: [`projects/{project_slug}/`](../)",
         f"> **Survey Methodology**: `literature-survey` skill (4-Factor Standardized Rubric)",
         f"> **Last Updated**: {time.strftime('%Y-%m-%d %H:%M:%S')}",
         "",
-        "This directory stores the primary source files (PDF reports, official gazettes, government announcements, and institutional webpages) evaluated and downloaded for this project track.",
-        "Summaries and claim extractions are permanently archived in [`raw/literature/`](../../raw/literature/) and linked to atomic semantic notes in [`wiki/semantic/sources/`](../../wiki/semantic/sources/).",
+        "This directory stores the primary source files (PDF reports, official gazettes, government announcements, and institutional webpages) centrally for all project tracks.",
+        "Summaries and claim extractions are archived here and linked to atomic semantic notes in [`wiki/semantic/sources/`](../../wiki/semantic/sources/).",
         "",
         "## Downloaded Literature Registry",
         "",
@@ -309,7 +307,7 @@ def write_project_manifest_and_readme(project_slug: str, results: list):
     for r in results:
         size_kb = r["size_bytes"] / 1024.0
         status_note = f"{size_kb:,.1f} KB" if r["size_bytes"] > 0 else f"Failed ({r['status']})"
-        summary_link = f"[`raw/literature/{r['summary_file']}`](../../raw/literature/{r['summary_file']})"
+        summary_link = f"[`{r['summary_file']}`](./{r['summary_file']})"
         lines.append(
             f"| **{r['title']}** | [`{r['filename']}`](./{r['filename']}) | {status_note} | {r['rubric_score']} | {r['tier']} | {summary_link} |"
         )
@@ -321,7 +319,6 @@ def write_project_manifest_and_readme(project_slug: str, results: list):
         "## Traceability & Immutability Protocol",
         "1. Primary documents in this folder are read-only reference materials.",
         "2. Analytical syntheses must cite specific section numbers or page coordinates.",
-        "3. See [`literature-survey.md`](../literature-survey.md) for full evaluative commentary and cross-source comparative matrices.",
     ])
 
     readme_path = lit_dir / "README.md"
@@ -332,7 +329,7 @@ def write_project_manifest_and_readme(project_slug: str, results: list):
 def main():
     print("=" * 75)
     print("  JP AI FUTURE STUDY GROUP — Automated Literature Downloader")
-    print("  Target: projects/<project>/literature/ + raw/literature/ link")
+    print("  Target: raw/literature/")
     print("=" * 75)
 
     # 1. Teacher Training Project
@@ -340,17 +337,16 @@ def main():
         "teacher-training-high-school-ai-pedagogy",
         TEACHER_TRAINING_SOURCES,
     )
-    write_project_manifest_and_readme("teacher-training-high-school-ai-pedagogy", res_teacher)
 
     # 2. AI in India Research Project
     res_india = download_project_literature(
         "research-ai-in-india",
         RESEARCH_AI_IN_INDIA_SOURCES,
     )
-    write_project_manifest_and_readme("research-ai-in-india", res_india)
 
     # Overall Summary
     total_sources = res_teacher + res_india
+    write_global_manifest_and_readme(total_sources)
     successful = sum(1 for r in total_sources if r["status"] in ("downloaded",) or "skipped" in r["status"])
     failed = len(total_sources) - successful
 
