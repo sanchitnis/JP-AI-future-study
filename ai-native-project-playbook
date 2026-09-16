@@ -1,0 +1,123 @@
+The AI-Native Project Playbook 
+Adapting the AI-Native SDLC to knowledge work done with Claude Cowork
+
+Why this exists
+Anthropic's AI-Native SDLC Playbook was written for software teams, but its core insight isn't really about code. It's about what happens to a process once the slowest stage — "doing the work" — suddenly runs at agent speed.
+
+For decades, project workflows (research, policy writing, curriculum design, grant proposals, institutional reports) were structured around the fact that producing the draft was the bottleneck. Committees, review cycles, and sign-off chains existed to force alignment during the long stretch it took a human to write something. Once an agent can produce a strong first draft in minutes, that structure stops matching reality — the bottleneck moves to planning and review, and old controls either stall the work or get skipped under pressure.
+
+This guidebook translates the same shift for non-coding projects: research notes, concept papers, curriculum frameworks, policy briefs, governance documents — the kind of work typically run through Cowork rather than Claude Code.
+
+The core idea: a loop, not a line
+Traditional project	AI-native project
+Shape	Linear: plan → draft → review → finalize → publish	A loop: each stage produces a committed artifact that triggers the next
+Bottleneck	Drafting (writing takes long, so review is occasional)	Review and judgment (drafting is fast, so human attention is the scarce resource)
+Knowledge	Lives in people's heads, re-explained each time	Lives in versioned files an agent can read every time
+Control	Sign-offs at fixed calendar checkpoints	Standing checks the agent applies continuously, with humans reviewing flagged items
+The one habit that makes this work: every stage ends by writing something down, and the next stage starts by reading it. Not a meeting summary — an actual file, kept somewhere durable (a folder, a repo, a shared doc), that both you and the agent can open cold.
+
+Do you need a separate spec.md?
+intent.md captures the raw problem. A separate spec.md/outline.md captures the resolved scope and structure — locked in after a working session, before drafting starts. They're not redundant:
+
+Skip the split for quick, low-stakes documents — a short internal note, a routine summary. Merge intent and structure into one file.
+Keep the split for anything with real stakes or length — a concept note, a policy brief, a curriculum framework. Without a locked spec, scope drifts mid-draft: the agent generates pages against an ambiguous brief, and you end up unwinding structure instead of reviewing content. The five minutes spent agreeing scope up front is cheaper than the rewrite later.
+Rule of thumb: if a wrong assumption about scope would cost you more than an hour of rework to fix, write the spec.
+
+The six stages, translated
+1. Plan → Capture an intent.md
+Traditional: ideas get discussed in meetings, then someone eventually writes a proposal from memory. AI-native: as soon as an idea, problem, or opportunity surfaces, capture it in a short file — what's the pain point, who's affected, what does "done" look like, what constraints exist. This becomes the seed the agent works from, not a mental note you'll have to reconstruct later.
+
+Example for you: a one-page intent.md for the PROdiGYM concept note, or for a new GBA policy angle, before you ask Cowork to draft anything.
+
+2. Design → Compress requirements + structure into one working session
+Traditional: a spec gets written by one person, handed to another to structure. AI-native: work the outline and the requirements out with the agent in one sitting — what sections, what evidence, what audience, what tone — rather than writing a brief separately from the drafting. Save this as spec.md or outline.md. Encode any standards you always want followed (formatting, citation style, institutional voice) as a reusable skill so you don't re-explain them each time.
+
+3. Build → Let the agent draft; you supply judgment, not sentences
+Traditional: the human writes; documentation and rationale get added afterward, if at all. AI-native: the agent produces the draft (report, brief, slide deck, curriculum doc); you supply direction, sources, and correction. Keep a running context file — a CLAUDE.md-style note of institutional facts, prior decisions, and style rules — so every new session starts with the same shared understanding instead of you re-briefing from scratch.
+
+4. Test → Review continuously, not at one big gate
+Traditional: the whole draft gets reviewed once, near the end, by whoever has time. AI-native: build small checks into the process as you go — does this claim have a source, does this section answer the brief, does this contradict an earlier document. Give the agent a feedback loop (how to tell if a draft is good) rather than saving all judgment for a single final read.
+
+5. Deploy → Layered review, human attention on what matters
+Traditional: every version gets read start to finish by a senior reviewer. AI-native: let the agent do first-pass review (consistency, completeness, tone, factual gaps) and reserve your own attention for the parts that need real judgment — framing, political sensitivity, strategic implications. This is also the point where you formally "commit" the artifact: publish the report, submit the note, circulate the brief. Keep a light approval gate (a quick check before anything goes out) rather than a heavy one.
+
+6. Maintain → Close the loop
+Traditional: once published, a document is done; feedback is informal and often lost. AI-native: treat feedback, outcomes, and follow-up questions as new intent.mds that restart the loop. Did the policy note get a response that raises a new question? Did the concept note get feedback requiring revision? That becomes the next cycle's input, not a one-off email thread.
+
+Skills: turning repeated corrections into reviewed, versioned playbooks
+In the original playbook, skills are institutional knowledge — encoded standards the agent applies without you re-explaining them each time. For non-coding work, a skill might be a review rubric, an institutional voice guide, an MOU clause standard, or a grant-formatting convention.
+
+The gap for non-coding skills: code has a built-in check (it runs or it doesn't). A written standard doesn't — nothing stops a skill from encoding a subtly wrong rule until a domain expert certifies it's correct. So skill-building needs its own small pipeline with a human gate, not just a file drop:
+
+changes needed
+
+approved
+
+Notice a correction
+you keep making
+
+Draft the skill:
+rule + example
+
+Expert review
+
+Versioned skill file
+
+Used in Build
+drafting stage
+
+Used in Test
+review stage
+
+Re-reviewed when
+the standard changes
+
+Practically:
+
+Notice the pattern. If you've corrected the same thing twice, it's a candidate skill — not a one-off note.
+Draft it narrowly. A rule plus one or two concrete examples, not a general essay on good writing.
+Route it to the domain expert who owns that standard (you, a colleague, a committee) before it's trusted to run unsupervised — the same seriousness you'd give a rubric used to grade real work.
+Version it. When the underlying standard changes (a new institutional policy, a revised template), the skill needs re-review, not silent drift.
+Let it feed both drafting and review — the agent uses it to write, and also uses it as a checklist when checking someone else's draft against the same standard.
+A skill that skips the expert-review step is just an unverified assumption with a file extension.
+
+Two kinds of feedback: the document loop and the process loop
+The Maintain stage above closes a loop per document — an outcome becomes the next intent.md. That's necessary but not sufficient. It tells you whether one policy note landed well; it doesn't tell you whether your whole workflow is still worth running the way you're running it.
+
+Add a second, slower loop — a process reflection, on its own cadence (monthly or quarterly, not per-document):
+
+Where did stages actually earn their keep? Did the spec step prevent a rewrite, or just add a delay? Did the review checklist catch a real problem, or has it become a rubber stamp you click past?
+Where is your attention actually going? If you're still reading every draft start to finish, the layered-review shift in Stage 5 hasn't really happened yet — worth naming that honestly rather than assuming the process works because it's documented.
+Are skills drifting from the standards they encode? A skill approved six months ago may be quietly out of date with current institutional policy.
+Is the loop shape still right for this kind of work? Some projects (a one-off report) may not need the full six-stage machinery; forcing it on everything defeats the point.
+Keep a short reflection.md per cadence — three or four honest lines is enough. This is the artifact that lets the process itself improve, not just each document that passes through it.
+
+What ties it together: the committed artifact
+Across all six stages, the throughline is the same: each stage ends by writing a file, and the next begins by reading it.
+
+For non-coding work, a simple version of the chain looks like:
+
+intent.md      → what's the problem / opportunity, and what does done look like
+spec.md        → structure, scope, requirements — locked in before drafting (skip for quick tasks)
+draft.md       → the agent-produced content, informed by any relevant skills
+review.md      → what was checked, what was flagged, what a human decided
+final.*        → the published/submitted artifact (doc, deck, note)
+feedback.md    → what happened after — becomes the next intent.md (per document)
+reflection.md  → periodic check on the process itself, not any one document
+Skills sit alongside this chain rather than inside it — approved once by a domain expert, then reused across many drafts and reviews until the underlying standard changes.
+
+You don't need special tooling for this — a folder per project with these files, or a Cowork session that keeps producing and referencing them, is enough to start.
+
+Getting started (without overbuilding it)
+You don't need all six stages formalized on day one. Start small:
+
+Pick one recurring type of document you produce often (a concept note, a policy brief, a course design doc).
+Write an intent.md template for it — three or four questions that capture what you're trying to do before you open Cowork.
+Decide, honestly, whether it needs a spec step. If getting the scope wrong would cost more than an hour to fix, add it. If not, don't.
+Keep one context file with the standing facts, style, and constraints the agent should always know for this kind of work, so you stop re-explaining them.
+Turn your first repeated correction into a skill — draft it narrowly, have the relevant expert (possibly you, wearing that hat) approve it before it runs unsupervised.
+Add one review checkpoint — a short list of things you always check before something goes out — and ask the agent to run it against every draft.
+Log outcomes after something is published, and set a reflection cadence (monthly is plenty at first) to ask whether the process is actually earning its keep.
+Once this rhythm feels natural for one document type, extend it to others. The goal isn't process for its own sake — it's making sure your attention goes to the judgment calls, not to work an agent can already do well.
+
+Adapted from Anthropic's AI-Native SDLC Playbook, which covers the full coding-specific version of this framework in depth.
