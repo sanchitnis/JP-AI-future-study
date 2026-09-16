@@ -10,7 +10,7 @@ Append-only record of all ingestions, perspective maps, tutoring sessions, learn
 - Initialized master `index.md` across 7 knowledge pillars (Governance, Labor, Ethics, Compute, Perspectives, Learning, NotebookLM).
 
 ## [2026-09-16] ingest | Converted AI Meetings - Overview.pdf to Markdown
-- Converted study group schedule `AI Meetings - Overview.pdf` (176 members, 13 sessions from Aug 2025 to Aug 2026) to [AI Meetings - Overview.md](file:///d:/sanjay/wiki-ai-future/AI%20Meetings%20-%20Overview.md).
+- Converted study group schedule `AI Meetings - Overview.pdf` (176 members, 13 sessions from Aug 2025 to Aug 2026) to [AI Meetings - Overview.md](file:///d:/sanjay/JP-AI-future-study/wiki/episodic/meetings/ai-meetings-overview.md).
 - Extracted and verified all 13 Google Drive recording URLs, speaker mappings, and topic themes across sovereign AI, LLM internals, physical AI, education, and geopolitics.
 
 ## [2026-09-16] memory | Cognitive Memory Architecture Reorganization
@@ -58,3 +58,78 @@ Append-only record of all ingestions, perspective maps, tutoring sessions, learn
 - Synthesized 1 new Reflective Memory dialectic map:
   - Perspective: `wiki/reflective/perspectives/good-vs-bad-ai-safety-and-acceleration.md`
 - Updated overarching series index `wiki/episodic/meetings/ai-meetings-overview.md` and master knowledge catalog `index.md`. All 13 seminar sessions across the entire series are now 100% ingested into the Second Brain.
+
+## [2026-09-16] project | Elevation to AI-Native Study Group Project Hub
+- Elevated repository from a standalone Second Brain Wiki to a full-fledged **AI-Native Study Group Project Hub** based on `ai-native-project-playbook.md`.
+- Established the **Dual-Engine Architecture**:
+  - **Component 1 (Collective Memory Engine)**: Grounded 5-tier cognitive memory in `wiki/`.
+  - **Component 2 (Project Delivery Tracks)**: Built `projects/` directory with 3 complete high-impact projects running on the 6-stage committed artifact chain (`intent.md` → `spec.md` → `draft.md` → `review.md` → `final.md` → `feedback.md`):
+    - `projects/policy-brief-sovereign-ai-compute/` (Saurabh Bodas & Parag)
+    - `projects/curriculum-foundational-ai-literacy/` (Rohan Katepallewar)
+    - `projects/concept-note-ai-workforce-resilience/` (Abhishek Suryawanshi & Swanand Joshi)
+    - `projects/_template-project/` (Standard 6-stage starter scaffold)
+  - **Component 3 (AI-Native Operating Playbooks & Templates)**: Created 4 operational playbooks and 6 Obsidian lifecycle templates in `wiki/procedural/playbooks/` and `wiki/procedural/templates/`.
+  - **Component 4 (Governed Skills Pipeline)**: Implemented `.agents/skills/ai-native-project-engine/` and `.agents/skills/skill-certification-pipeline/` with human expert review gates.
+  - **Component 5 (Process Reflections Cadence)**: Created `reflections/` vault with `README.md`, `reflection-template.md`, and inaugural `2026-q1-study-group-reflection.md`.
+- Fully updated repository governance: `AGENTS.md`, `index.md`, `README.md`, `GETTING-STARTED.md`, `CONTRIBUTING.md`, and `.agents/SKILL.md`.
+
+## [2026-09-16] project | High School Teacher AI Pedagogy & Literature Survey Skill
+- Created new governed agent skill: `.agents/skills/literature-survey/SKILL.md` featuring a 4-factor scoring rubric (Relevance, Depth, Source Quality, Actionability), text archiving into `raw/literature/`, and semantic grounding.
+- Executed comprehensive literature survey evaluating 4 foundational Tier-1 pillars:
+  - `wiki/semantic/sources/source-unesco-ai-competency-framework-teachers.md` (UNESCO 2024, Score: 4.8/5.0)
+  - `wiki/semantic/sources/source-cognitive-offloading-performance-paradox.md` (APA/EI 2024, Score: 4.8/5.0)
+  - `wiki/semantic/sources/source-mollick-assigning-ai-socratic-tutor.md` (Wharton/Harvard 2023, Score: 4.9/5.0)
+  - `wiki/semantic/sources/source-cbse-nep2020-ai-curriculum.md` (CBSE/NCERT 2023–2026, Score: 4.7/5.0)
+- Archived raw texts in `raw/literature/` for permanent cold-open traceability.
+- Built new project track `projects/teacher-training-high-school-ai-pedagogy/` covering the full 6-stage committed artifact chain:
+  - `context.md`: Cognitive deskilling, anti-brain rot pedagogy, Bloom's 2-Sigma coaching.
+  - `intent.md`: Stage 1 Plan for training secondary teachers (Grades 9–12).
+  - `spec.md`: Stage 2 Design with two-tier assessment zones and Socratic prompt protocols.
+  - `literature-survey.md`: Multi-source evaluative synthesis matrix.
+  - `draft.md`: Stage 3 Build with 4-week modular training curriculum and prompt toolkits.
+  - `review.md`: Stage 4 Test with two-layer verification checks (Rohan Katepallewar, Deepak Gupte, Gaurav Marathe).
+  - `final.md`: Stage 5 Deployed Master Educator Framework.
+  - `feedback.md`: Stage 6 Maintain with next-cycle intent triggers.
+- Updated `projects/README.md` and master dashboard `index.md`.
+
+## [2026-09-16] literature | Expanded Global Literature Survey: China, Singapore & South Korea
+- Expanded the secondary AI pedagogy literature survey across three leading East Asian education systems:
+  - **Singapore MOE (AIEd & SLS, 2023–2025)**: Evaluated national Student Learning Space (SLS) with Socratic Learning Assistant (LEA), Authoring Copilot (ACP), and Data Assistant (DAT). Archived to `raw/literature/singapore-moe-ai-in-education-framework-sls.md`; created `wiki/semantic/sources/source-singapore-moe-aied-framework.md` (Score: 4.9/5.0).
+  - **China MOE (K-12 AI Guidelines, May 2025)**: Evaluated 4-dimensional "spiral" curriculum (Cognition, Skills, Thinking, Values), strict bans on generative AI in primary schools, anti-substitution rules for teachers, and minimum 8 annual instructional hours. Archived to `raw/literature/china-moe-k12-ai-curriculum-guidelines-2025.md`; created `wiki/semantic/sources/source-china-moe-k12-ai-guidelines.md` (Score: 4.9/5.0).
+  - **South Korea (AI Digital Textbooks Case, 2024–2025)**: Evaluated the real-world cautionary case of mandatory screen-textbook rollout, resulting in parent/teacher pushback and the August 2025 National Assembly bill reclassifying AIDTs from core textbooks to optional supplementary materials. Archived to `raw/literature/south-korea-ai-digital-textbooks-policy-2025.md`; created `wiki/semantic/sources/source-south-korea-ai-textbooks-case.md` (Score: 4.6/5.0).
+- Synthesized and established a new Semantic Comparative Analysis node:
+  - `wiki/semantic/comparisons/k12-ai-pedagogy-india-vs-singapore-china-korea.md`
+- Enriched `projects/teacher-training-high-school-ai-pedagogy/literature-survey.md`, `draft.md`, `final.md`, and master index `index.md`.
+
+## [2026-09-16] project | Research Study: AI in India (Comprehensive Ecosystem Analysis)
+- Inspired by **Session 13: AI with Chinese Characteristics** ([[meeting-13-ai-with-chinese-characteristics]]), created a new comprehensive research project: `projects/research-ai-in-india/`.
+- **Step 1: Comprehensive Literature Survey** — Conducted systematic multi-source research across 8 domains (governance, compute, startups, talent, sector applications, semiconductors, defense, inclusion). Evaluated 6 sources using the 4-factor rubric:
+  - `wiki/semantic/sources/source-indiaai-mission-progress-2024-2026.md` (MeitY/PIB/NITI Aayog, Score: 4.8/5.0) — **Tier 1**
+  - `wiki/semantic/sources/source-india-ai-governance-guidelines-2025.md` (MeitY/PSA, Score: 4.8/5.0) — **Tier 1**
+  - `wiki/semantic/sources/source-india-semiconductor-mission-hardware-sovereignty.md` (ISM/MeitY/NASSCOM, Score: 4.55/5.0) — **Tier 1**
+  - `wiki/semantic/sources/source-niti-aayog-ai-inclusive-development-2025.md` (NITI Aayog, Score: 4.55/5.0) — **Tier 1**
+  - `wiki/semantic/sources/source-india-ai-defense-national-security.md` (ORF/DRDO/KPMG, Score: 3.80/5.0) — **Tier 2**
+  - Cross-referenced existing `indiaai-mission-cabinet-approval-2024` (Score: 4.30/5.0) — **Tier 1**
+- **Archived raw texts** in `raw/literature/`:
+  - `indiaai-mission-implementation-progress-2024-2026.md`
+  - `india-ai-governance-guidelines-2025.md`
+  - `india-semiconductor-mission-ai-hardware-sovereignty.md`
+  - `india-ai-defense-national-security-2025.md`
+  - `niti-aayog-ai-inclusive-development-shramsestu-2025.md`
+- **Step 2: Full 6-Stage Project Track** — Built complete committed artifact chain:
+  - `context.md`: Wiki grounding across episodic, semantic, reflective tiers
+  - `intent.md`: Stage 1 Plan — "AI with Indian Characteristics" research study
+  - `spec.md`: Stage 2 Design — 12-chapter structure locked, citation standards, quality criteria
+  - `literature-survey.md`: Evaluative synthesis matrix (5 Tier-1, 1 Tier-2 sources)
+  - `draft.md`: Stage 3 Build — ~10,000-word comprehensive research paper
+  - `review.md`: Stage 4 Test — Automated grounding audit + human expert review flags
+  - `final.md`: Stage 5 Deploy — Promoted and versioned
+  - `feedback.md`: Stage 6 Maintain — Pre-loaded next-cycle intent triggers
+- **Step 3: Wiki Ingestion** — Synthesized and established new knowledge nodes:
+  - Concept: `wiki/semantic/concepts/ai-governance-india.md` (Seven Sutras framework)
+  - Concept: `wiki/semantic/concepts/india-semiconductor-and-hardware-sovereignty.md`
+  - Concept: `wiki/semantic/concepts/india-defense-ai-applications.md`
+  - Entity: `wiki/semantic/entities/india/sarvam-ai.md` (India's sovereign AI unicorn)
+  - Comparison: `wiki/semantic/comparisons/india-global-ai-landscape-comparison-2026.md` (India vs. China vs. US vs. EU)
+- **Step 4: Dashboard Updates** — Updated `projects/README.md`, master `index.md`, and this `log.md`.
+- **Expert Reviewers**: Saurabh Bodas (Compute), Mihir Shete (Geopolitics), Abhishek Suryawanshi (Economics), Rohan Katepallewar (Education).

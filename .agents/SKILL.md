@@ -1,59 +1,54 @@
 ---
-name: india-ai-policy-wiki
-description: Maintain a persistent, git-backed Obsidian wiki tracking AI policy, research, deployment, infrastructure, and government schemes in India organized under the Cognitive Memory Architecture. Use whenever the user drops in an article, paper, report, or seminar link; whenever a question should be answered from the accumulated wiki; whenever they want a briefing, comparison, or summary; or a wiki health check. Trigger even without the word "wiki" — "file this", "add this to my India AI policy notes", "what do we know about the IndiaAI Mission" all count.
+name: jp-ai-study-group-hub
+description: Maintain and operate the JP AI Future Study Group Project Hub, orchestrating both the 5-tier Cognitive Memory Wiki and the 6-stage AI-Native Project lifecycle (Plan -> Design -> Build -> Test -> Deploy -> Maintain). Use whenever the user wants to ingest a source, explore seminar notes, develop a policy brief or curriculum, certify a skill, or conduct a process reflection.
 ---
 
-# India AI Policy Wiki (Cognitive Memory Edition)
+# JP AI Future Study Group Hub (Dual-Engine Edition)
 
-You maintain a living knowledge base — not a chatbot that re-derives answers from scratch each time. Every source you ingest should make the wiki smarter for every future question. The tedious part (cross-referencing, flagging contradictions, keeping summaries current, maintaining cognitive memory tiers) is your job so the user never has to do it.
+You operate a living **AI-Native Study Group Project Hub** that pairs an active knowledge work production engine with a persistent 5-tier Collective Memory Wiki.
 
-## Cognitive Memory Layout
+---
+
+## 🏛️ Repository Layout
 
 ```text
-AGENTS.md             standing instructions (repository constitution)
-index.md              catalog of every wiki page across all 5 cognitive tiers
-log.md                append-only record: ## [YYYY-MM-DD] ingest|query|lint|compare|memory | Title
-raw/                  immutable source files (articles, PDFs, transcripts) — never edit these
-wiki/
-  episodic/           time-bound episodes (seminars, study groups, interviews, events)
-    meetings/         AI Future Study Group sessions & series index (ai-meetings-overview.md)
-    interviews/       expert interviews and recorded dialogues
-    events/           summits, workshops, and roundtables
-  semantic/           grounded world knowledge, entities, atomic sources, core concepts
-    concepts/         cross-cutting themes: compute-capacity-and-energy.md, dpi-for-ai.md, ...
-    entities/<c>/     government bodies, agencies, named schemes (e.g. entities/india/indiaai-mission.md)
-    sources/          atomic claim sheets extracted from papers and government reports
-    comparisons/      head-to-head pages, e.g. india-vs-china-compute-strategy.md
-  reflective/         dialectic sensemaking, perspective spectrums & syntheses
-    perspectives/     multi-stakeholder debate matrices (e.g. india-frontier-models-vs-applications.md)
-    synthesis/        collaborative consensus whitepapers & evolving theses
-  working/            active learning primers, Socratic guides & LLM bridges
-    learning/         pedagogical primers, curricula, flash-briefs (primer-sovereign-compute-india.md)
-    notebooklm/       Google NotebookLM bridge packs & audio blueprints (pack-india-sovereign-ai.md)
-  procedural/         operational playbooks, templates, and agent guidelines
-    playbooks/        research and episodic ingestion workflows
-    templates/        reusable obsidian templates for each memory tier
+AGENTS.md             Standing constitutional instructions
+index.md              Master Dashboard linking Projects, Memory, Playbooks & Reflections
+log.md                Append-only chronological activity log
+projects/             Active & delivered knowledge deliverables (intent -> spec -> draft -> review -> final -> feedback)
+  policy-brief-...    Sovereign AI Compute Policy Brief
+  curriculum-...      Vernacular Voice AI FLN Curriculum
+  concept-note-...    IT/BPO Centaur Workforce Resilience
+  _template-project/  Reusable 6-stage project scaffold
+reflections/          Quarterly process reflection audits (stage ROI, attention allocation, skill drift)
+raw/                  Immutable raw source artifacts (never edit directly)
+wiki/                 Collective Memory Engine
+  episodic/           Dated seminar sessions (13 study group meetings), interviews, events
+  semantic/           Grounded concepts, entities, atomic sources, and comparisons
+  reflective/         Dialectic perspective matrices and consensus whitepapers
+  working/            Primers, syllabi, and Google NotebookLM bridge packs
+  procedural/         AI-native operational playbooks and Obsidian templates
 ```
 
-Full frontmatter schema and page-writing conventions are in `.agents/references/taxonomy.md`.
+---
 
-## Operations
+## 🔁 Core Operations
 
-### 1. Ingest (Episodic or Semantic)
-- Determine if the source is **Episodic** (meeting, seminar, interview transcript) or **Semantic** (paper, government decree, data report).
-- File into `wiki/episodic/` or `wiki/semantic/sources/`.
-- Cross-link across memory tiers (concepts, perspectives, entities).
-- Update `index.md` and append to `log.md`.
+### 1. Project Operations (6-Stage AI-Native Loop)
+- **Plan**: Create `intent.md` defining problem, audience, definition of done, and constraints.
+- **Design**: Lock `spec.md` with section outline, non-goals, and reading level.
+- **Build**: Generate `draft.md` anchoring to `context.md` and grounded sources.
+- **Test**: Run Layer 1 agent checks and Layer 2 human domain expert sign-off in `review.md`.
+- **Deploy**: Promote verified deliverable to `final.md`.
+- **Maintain**: Capture reception in `feedback.md` and seed the next cycle's `intent.md`.
 
-### 2. Query
-- Search `index.md` and traverse relevant cognitive tiers.
-- Answer with explicit citations to specific wiki nodes (`[[filename|Title]]`).
+### 2. Governed Skills Pipeline
+- If a correction occurs twice, draft a candidate skill (`rule + concrete example`).
+- Route to the domain expert lead for formal certification before graduation into `.agents/skills/`.
 
-### 3. Compare & Reflect
-- Synthesize contested stances in `wiki/reflective/perspectives/`.
+### 3. Collective Memory Ingestion & Query
+- Ingest episodic seminars into `wiki/episodic/meetings/` and papers into `wiki/semantic/sources/`.
+- Answer questions by citing specific atomic nodes (`[[filename|Title]]`).
 
-### 4. Learning & Working
-- Generate primers, discussion questions, and NotebookLM bridge packs in `wiki/working/`.
-
-### 5. Lint
-- Check health, orphan nodes, and schema compliance (`memory_tier`) across all 5 tiers.
+### 4. Process Reflections
+- On quarterly cadence, audit stage ROI, human attention, and skill drift in `reflections/`.

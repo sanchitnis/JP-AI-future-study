@@ -1,0 +1,238 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Artificial Intelligence</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link type="text/css" href="resource/css/main.css" rel="stylesheet" />
+    <script src="resource/js/jquery.min.js"></script>
+<script type="text/javascript" src="resource/js/fishmenu.js" ></script>
+<script>
+jQuery(document).ready(function($){
+    //$("p").click(function(){
+	var hasQueryString = document.URL.indexOf('=hindi');
+	if (hasQueryString != -1)
+	{
+        $('span.english').hide();
+	}else{
+        $('span.hindi').hide();	
+	}
+    //});
+});
+</script>
+
+<script type="text/javascript">
+fishmenu.init({
+	mainmenuid: "fish1", //menu DIV id
+	orientation: 'h', //Horizontal or vertical menu: Set to "h" or "v"
+	classname: 'fishmenu', //class added to menu's outer DIV
+	//customtheme: ["#1c5a80", "#18374a"],
+	contentsource: "markup" //"markup" or ["container_id", "path_to_menu_file"]
+})
+
+</script>
+<script>
+jQuery(document).ready(function($){
+	// hide #back-top first
+	$("#back-top").hide();
+
+	// fade in #back-top
+	$(function () {
+		$(window).scroll(function () {
+			if ($(this).scrollTop() > 100) {
+				$('#back-top').fadeIn();
+			} else {
+				$('#back-top').fadeOut();
+			}
+		});
+
+		// scroll body to 0px on click
+		$('#back-top a').click(function () {
+			$('body,html').animate({
+				scrollTop: 0
+			}, 800);
+			return false;
+		});
+	});
+
+});
+</script>
+<style>
+/*span.english{ display:none;}
+
+Back to top button
+*/
+#back-top {
+	position: fixed;
+	bottom: 30px;
+	margin-left: -150px;
+}
+#back-top a {
+	width: 108px;
+	display: block;
+	text-align: center;
+	font: 11px/100% Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #bbb;
+	/* background color transition */
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	transition: 1s;
+}
+#back-top a:hover {
+	color: #000;
+}
+/* arrow icon (span tag) */
+#back-top span {
+	width: 108px;
+	height: 108px;
+	display: block;
+	margin-bottom: 7px;
+	background: #ddd url(up-arrow.png) no-repeat center center;
+	/* rounded corners */
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	/* background color transition */
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	transition: 1s;
+}
+#back-top a:hover span {
+	background-color: #777;
+}
+</style>
+ <style>
+a {
+text-decoration:none;
+}
+#circulars
+{
+font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+width:100%;
+border-collapse:collapse;
+}
+#circulars td, #circulars th
+{
+font-size:1em;
+border:1px solid #b58686;
+padding:3px 7px 2px 7px;
+}
+#circulars th
+{
+font-size:1.1em;
+text-align:left;
+padding-top:5px;
+padding-bottom:4px;
+background-color:#009900;
+color:#ffffff;
+}
+#circulars tr.alt td
+{
+color:#000000;
+background-color:#EAF2D3;
+}
+</style>
+</head>
+<body>
+<div  class="main-container">
+	<center>
+		  <div class="inner-container" >
+	<div class="header" >
+	</div>
+		<div id="fish1" class="fishmenu">
+		<ul>
+			<li><a href="index.html"><span class="english">Home</span><span class="hindi">होम</span></a></li>
+			<li><a href="skill-education.html"><span class="english">Skill Education</span><span class="hindi">Skill Education</span></a></li>
+			<li><a href="web_material/Curriculum25/publication/secondary/417_AI_Handbook_Class9.pdf" target="_blank" title="Curriculum Handbook">Handbook</a></li>
+
+			<li><a href="#" target="_blank">Integration Manual</a>
+			      <ul>
+			        <li><a href="web_material/Curriculum20/AI_Integration_Manual.pdf" target="_blank">Integration Manual</a></li>
+			        <li><a href="web_material/Curriculum20/AI_Integration_Manual_Introduction.pdf" target="_blank">Introduction</a></li>
+			        <li><a href="web_material/Curriculum20/AI_Integration_Manual_Hindi.pdf" target="_blank">Hindi</a></li>
+			        <li><a href="web_material/Curriculum20/AI_Integration_Manual_English.pdf" target="_blank">English</a></li>
+			        <li><a href="web_material/Curriculum20/AI_Integration_Manual_Maths.pdf" target="_blank">Mathematics</a></li>
+			        <li><a href="web_material/Curriculum20/AI_Integration_Manual_Science.pdf" target="_blank">Science</a></li>
+			        <li><a href="web_material/Curriculum20/AI_Integration_Manual_SocialScience.pdf" target="_blank">Social Science</a></li>
+			      </ul>
+			</li>
+			<li><a href="web_material/Curriculum23/AIoT_Integration_Manual.pdf" target="_blank">AIoT Integration Manual</a></li>
+			<li><a href="skill-education-curriculum.html" target="_blank">Curriculum</a>
+			      <ul>
+			        <li><a href="web_material/Curriculum25/sec/417-AI-IX.pdf" target="_blank">Class IX</a></li>
+			        <li><a href="web_material/Curriculum25/sec/417-AI-X.pdf" target="_blank">Class X</a></li>
+			        <li><a href="web_material/Curriculum25/SrSec/843-AI-XI.pdf" target="_blank">Class XI</a></li>
+			        <li><a href="web_material/Curriculum25/SrSec/843-AI-XII.pdf" target="_blank">Class XII</a></li>
+			      </ul>
+			</li>
+			<!-- li><a href="#" target="_blank">Question Bank</a>
+			      <ul>
+			        <li><a href="web_material/Curriculum20/Q_ClassX_AI_Ch1.pdf" target="_blank">Class X - Chapter 1</a></li>
+			        <li><a href="web_material/Curriculum20/Q_ClassX_AI_Ch2.pdf" target="_blank">Class X - Chapter 2</a></li>
+			        <li><a href="web_material/Curriculum20/Q_ClassX_AI_Ch3.pdf" target="_blank">Class X - Chapter 3</a></li>
+			        <li><a href="web_material/Curriculum20/Q_ClassX_AI_Ch7.pdf" target="_blank">Class X - Chapter 7</a></li>
+			        <li><a href="web_material/Curriculum20/Q_ClassX_AI_Ch8.pdf" target="_blank">Class X - Chapter 8</a></li>
+			      </ul>
+			</li -->
+                        <li><a href="https://ai-for-all.in/#/home?ref=CBSE" title="AI For All">AI For All</a></li>
+			<li><a href="web_material/Curriculum20/AI_Project_Showcase.pdf" target="_blank">AI Projects</a></li>
+			<li><a href="web_material/Curriculum20/Class_IX/417-FAQ.pdf">FAQ</a></li>
+			<li><a href="aigallery.html">Gallery</a></li>
+			<li><a href="https://aistudent.community" target="_blank">AI Student Community</a></li>
+			<li><a href="https://aifacilitator.community/" target="_blank">AI Facilitator Community</a></li>
+		</ul>
+	<br style="clear: left" />
+	</div>
+	<div align="left">
+		<!--	<center><font color="blue" size="4px"><b><i>Contact Us</i></b></font></center><br />
+			<br />
+					<img src="resource/images/header.jpg" />
+		--></div>
+	<div class="body-container">
+		<table border="0" cellpadding="0" cellspacing="0">
+			<tr width="900">
+
+          	</tr>
+          	<tr>
+            	<td align="center" valign="top" width="680" class="block inner-height">
+				<h2 align="center"><font color="#FF6600">CBSE Artificial Intelligence Curriculum Launch</font></h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Db9lTvq21g4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br/><br/>
+			<h2 align="center"><font color="#FF6600">Artificial Intelligence Curriculum Class 9 Facilitator Guide</font></h2>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/fK_KJWwhgp8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</td>
+	<!-- end center body -->
+         	</tr>
+          <!-- left center below -->
+           <!--  -->
+          		<tr>
+            <td colspan="2" width="100%" valign="top"  style="padding:10px 0px 0px 10px">
+
+
+            </td>
+             	</tr>
+              <!-- end left center below -->
+           <!-- END LATEST ACTIVIT-->
+
+            </table>
+
+        <!-- end left and center  -->
+         </td>
+       <!-- right body -->
+              </div>
+              <p id="back-top">
+		<a href="#top"><span></span>Back to Top</a>
+	</p>
+
+	<!-- footer-->
+				<div class="footer-container">
+					<font class="footer-text">&copy; 2022 CBSE Research & Development Unit</font>
+				</div>
+				<!-- end  footer-->
+				
+         </div>
+         </center>		 
+         </div>
+         <script type="text/javascript" src="/bnith__jD5JdwBnP5pprSVMybLY3p5mb0Ty1jHV_UhwHlMvEjF495m_oERyt2S7Rm1DLFQppSRHPILgHMw="></script> <script language="JavaScript" type="text/javascript">const _0x35e8=['visitorId','18127kSXadA','356575NPKVMA','7306axxsAH','get','657833TzFjkt','717302TQdBjl','34lMHocq','x-bni-rncf=PaMH7mqhtwkjm9AIsOhzHZUhSrV_tmPnI3mLr8V_FxE=;expires=Thu, 01 Jan 2037 00:00:00 UTC;path=/;','61XMWbpU','cookie',';expires=Thu, 01 Jan 2037 00:00:00 UTC;path=/;','then','651866OSUgMa','811155xdatvf','x-bni-fpc='];function _0x258e(_0x5954fe,_0x43567d){return _0x258e=function(_0x35e81f,_0x258e26){_0x35e81f=_0x35e81f-0x179;let _0x1280dc=_0x35e8[_0x35e81f];return _0x1280dc;},_0x258e(_0x5954fe,_0x43567d);}(function(_0x5674de,_0xdcf1af){const _0x512a29=_0x258e;while(!![]){try{const _0x55f636=parseInt(_0x512a29(0x17b))+-parseInt(_0x512a29(0x179))*parseInt(_0x512a29(0x17f))+-parseInt(_0x512a29(0x183))+-parseInt(_0x512a29(0x184))+parseInt(_0x512a29(0x187))*parseInt(_0x512a29(0x17d))+parseInt(_0x512a29(0x188))+parseInt(_0x512a29(0x17c));if(_0x55f636===_0xdcf1af)break;else _0x5674de['push'](_0x5674de['shift']());}catch(_0xd3a1ce){_0x5674de['push'](_0x5674de['shift']());}}}(_0x35e8,0x6b42d));function getClientIdentity(){const _0x47e86b=_0x258e,_0x448fbc=FingerprintJS['load']();_0x448fbc[_0x47e86b(0x182)](_0x4bb924=>_0x4bb924[_0x47e86b(0x17a)]())[_0x47e86b(0x182)](_0x2f8ca1=>{const _0x44872c=_0x47e86b,_0xa48f50=_0x2f8ca1[_0x44872c(0x186)];document[_0x44872c(0x180)]=_0x44872c(0x185)+_0xa48f50+_0x44872c(0x181),document[_0x44872c(0x180)]=_0x44872c(0x17e);});}getClientIdentity();</script></body>
+
+         </html>

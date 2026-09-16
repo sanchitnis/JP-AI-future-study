@@ -1,0 +1,1042 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1"><title>
+	Press Release:Press Information Bureau
+</title><link href="css/style.css" rel="stylesheet" type="text/css" /><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><link rel="alternate stylesheet" href="css/change.css" media="screen" title="change" /><link rel="alternate stylesheet" href="css/green.css" media="screen" title="green" /><link rel="alternate stylesheet" href="css/yellow.css" media="screen" title="yellow" /><link rel="stylesheet" type="text/css" href="css/prtint.css" media="print" /><link rel="stylesheet" href="css/style3.1.css" type="text/css" />
+
+
+      <script src="js/jquery.min.js" type="text/javascript"></script>
+      <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="true" /><link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet" />
+
+      <script type="text/javascript">
+            $(document).ready(function () {
+                  function getParameterByName(name) {
+                        var url = window.location.href;
+                        name = name.replace(/[\[\]]/g, '\\$&');
+                        var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+                              results = regex.exec(url);
+                        if (!results) return null;
+                        if (!results[2]) return '';
+                        return decodeURIComponent(results[2].replace(/\+/g, ' '));
+                  }
+                  // Get the IDs from the current page's URL
+                  let prid = parseInt(getParameterByName('PRID'), 10);
+
+                  if (!isNaN(prid) && prid > 0) {
+                        $.ajax({
+                              type: "POST",
+                              url: "AjaxMethod.aspx/UpdatePRHitCount",
+                              async: false,
+                              data: JSON.stringify({ 'PermId': prid }),
+                              contentType: "application/json; charset=utf-8",
+                              dataType: "json",
+                              success: function (response) {
+                                    console.log(response);
+                              },
+                              error: function (error) {
+                                    console.log("Error in AJAX request", error);
+                              }
+                        });
+                  } else {
+                        console.log("Invalid parameters:", prid);
+                  }
+
+            });
+      </script>
+      <style type="text/css">
+            .table-responsive {
+                  width: 100%;
+                  overflow-x: auto;
+            }
+
+            .banner {
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                  background-color: #000;
+                  color: #fff;
+                  padding: 20px;
+            }
+
+            full-width {
+                  width: 100%;
+            }
+
+            .logo-left, .logo-center, .countdown {
+                  display: flex;
+                  align-items: center;
+            }
+
+                  .logo-left img, .logo-center img {
+                        height: 70px;
+                  }
+
+            .countdown {
+                  text-align: center;
+                  background-color: #444;
+                  border-radius: 10px;
+                  padding: 10px;
+                  border: 2px solid grey;
+            }
+
+            .firstnumber {
+                  color: #000000;
+                  position: absolute;
+                  top: 50px;
+                  right: 90px;
+                  font-size: 30px;
+            }
+
+            .secondnumber {
+                  position: absolute;
+                  color: #000000;
+                  right: 45px;
+                  top: 50px;
+                  font-size: 30px;
+            }
+
+            .countdown .days {
+                  font-size: 35px;
+                  color: gold;
+            }
+
+            .countdown p {
+                  margin: 0;
+            }
+
+            .countdown .text {
+                  font-size: 16px;
+            }
+
+            a {
+                  word-break: break-all;
+            }
+
+            iframe, img {
+                  max-width: 100%;
+            }
+
+            @media(max-width:1199px) {
+                  .firstnumber {
+                        top: 40px;
+                        right: 72px;
+                        font-size: 30px;
+                  }
+
+                  .secondnumber {
+                        right: 35px;
+                        top: 40px;
+                        font-size: 30px;
+                  }
+            }
+
+            @media(max-width:990px) {
+                  .firstnumber {
+                        top: 25px;
+                        right: 54px;
+                        font-size: 30px;
+                  }
+
+                  .secondnumber {
+                        right: 25px;
+                        top: 25px;
+                        font-size: 30px;
+                  }
+            }
+
+            @media(max-width:768px) {
+                  .countdown, .days {
+                        font-size: 12px !important;
+                  }
+
+
+                  .firstnumber {
+                        top: 25%;
+                        right: 8%;
+                        font-size: 30px;
+                  }
+
+                  .secondnumber {
+                        right: 4.5%;
+                        top: 25%;
+                        font-size: 30px;
+                  }
+            }
+
+            @media(max-width:475px) {
+                  .countdown, .days {
+                        font-size: 10px !important;
+                        top: 20%;
+                  }
+
+                  .bannerimgdiv {
+                        padding: 0 !important;
+                  }
+
+                  .bannerimg {
+                        width: 108% !important;
+                  }
+            }
+      </style>
+      <script type="text/javascript">
+            $(function () {
+                  $("[id*=printPDF]").click(function () {
+                        $("[id*=hfGridHtml]").val($("#PdfDiv").html());
+                  });
+            });
+            $(function () {
+                  $("[id*=printPDFEvent]").click(function () {
+                        $("[id*=hfGridHtml]").val($("#PdfDiv").html());
+                  });
+            });
+      </script>
+
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112591026-1"></script>
+      <script>
+
+            window.dataLayer = window.dataLayer || [];
+
+            function gtag() { dataLayer.push(arguments); }
+
+            gtag('js', new Date());
+
+
+
+            gtag('config', 'UA-112591026-1');
+
+      </script>
+
+<meta property="og:title" content="लोकसभा अध्यक्ष श्री ओम बिरला और खेल मंत्री श्री अनुराग सिंह ठाकुर ने राष्ट्रीय युवा संसद महोत्सव, 2024 के समापन समारोह को संबोधित किया" /><meta property="og:url" content="www.pib.gov.in/Pressreleaseshare.aspx?PRID=2012011" /><meta property="og:description" content="लोकसभा अध्यक्ष श्री ओम बिरला और केंद्रीय युवा कार्यक्रम और खेल मंत्री श्री अनुराग सिंह ठाकुर ने आज न" /><meta property="og:image" content="https:/pib.gov.in/images/indian-emblem.png" />
+                                <script>!function(e){var n="https://s.go-mpulse.net/boomerang/";if("False"=="True")e.BOOMR_config=e.BOOMR_config||{},e.BOOMR_config.PageParams=e.BOOMR_config.PageParams||{},e.BOOMR_config.PageParams.pci=!0,n="https://s2.go-mpulse.net/boomerang/";if(window.BOOMR_API_key="C4E7H-KSCMC-422L4-W3EM5-U36MF",function(){function e(){if(!i){var e=document.createElement("script");e.id="boomr-scr-as",e.src=window.BOOMR.url,e.async=!0,o.parentNode.appendChild(e),i=!0}}function t(e){i=!0;var n,t,a,r,d=document,O=window;if(window.BOOMR.snippetMethod=e?"if":"i",t=function(e,n){var t=d.createElement("script");t.id=n||"boomr-if-as",t.src=window.BOOMR.url,BOOMR_lstart=(new Date).getTime(),e=e||d.body,e.appendChild(t)},!window.addEventListener&&window.attachEvent&&navigator.userAgent.match(/MSIE [67]\./))return window.BOOMR.snippetMethod="s",void t(o.parentNode,"boomr-async");a=document.createElement("IFRAME"),a.src="about:blank",a.title="",a.role="presentation",a.loading="eager",r=(a.frameElement||a).style,r.width=0,r.height=0,r.border=0,r.display="none",o.parentNode.appendChild(a);try{O=a.contentWindow,d=O.document.open()}catch(_){n=document.domain,a.src="javascript:var d=document.open();d.domain='"+n+"';void(0);",O=a.contentWindow,d=O.document.open()}if(n)d._boomrl=function(){this.domain=n,t()},d.write("<bo"+"dy onload='document._boomrl();'>");else if(O._boomrl=function(){t()},O.addEventListener)O.addEventListener("load",O._boomrl,!1);else if(O.attachEvent)O.attachEvent("onload",O._boomrl);d.close()}function a(e){window.BOOMR_onload=e&&e.timeStamp||(new Date).getTime()}if(!window.BOOMR||!window.BOOMR.version&&!window.BOOMR.snippetExecuted){window.BOOMR=window.BOOMR||{},window.BOOMR.snippetStart=(new Date).getTime(),window.BOOMR.snippetExecuted=!0,window.BOOMR.snippetVersion=12,window.BOOMR.url=n+"C4E7H-KSCMC-422L4-W3EM5-U36MF";var o=document.currentScript||document.getElementsByTagName("script")[0],i=!1,r=document.createElement("link");if(r.relList&&"function"==typeof r.relList.supports&&r.relList.supports("preload")&&"as"in r)window.BOOMR.snippetMethod="p",r.href=window.BOOMR.url,r.rel="preload",r.as="script",r.addEventListener("load",e),r.addEventListener("error",function(){t(!0)}),setTimeout(function(){if(!i)t(!0)},3e3),BOOMR_lstart=(new Date).getTime(),o.parentNode.appendChild(r);else t(!1);if(window.addEventListener)window.addEventListener("load",a,!1);else if(window.attachEvent)window.attachEvent("onload",a)}}(),"".length>0)if(e&&"performance"in e&&e.performance&&"function"==typeof e.performance.setResourceTimingBufferSize)e.performance.setResourceTimingBufferSize();!function(){if(BOOMR=e.BOOMR||{},BOOMR.plugins=BOOMR.plugins||{},!BOOMR.plugins.AK){var n=""=="true"?1:0,t="",a="eqcqeaoqalebejafaiabmcaxgfvkvcp2-f-9a5fc3226-clienttons-s.akamaihd.net",o="false"=="true"?2:1,i={"ak.v":"41","ak.cp":"1825201","ak.ai":parseInt("1215205",10),"ak.ol":"0","ak.cr":7,"ak.ipv":6,"ak.proto":"http/1.1","ak.rid":"a6256ed","ak.r":30814,"ak.a2":n,"ak.m":"dscb","ak.n":"ff","ak.cport":59537,"ak.gh":"23.193.56.46","ak.quicv":"","ak.tlsv":"tls1.2","ak.0rtt":"","ak.0rtt.ed":"","ak.csrc":"-","ak.acc":"bbr","ak.t":"1789561338","ak.ak":"hOBiQwZUYzCg5VSAfCLimQ==RujuaPRgwROBclIA2y/N0JVDtpF1XcvIJLCXOUtqGYjpigFOjOhOLQWjSsDhJTFKgYG2j2oWPWn9lqr0JmlS0FmyKs7s14j8wKfv+RFJDhE05s5g7qAh0H+tZrS3vSk2ohkqmAVMiNICq/yfR1OfEXNQL+7WLsY1ew6EB20ddD6vaihAPUZSs4vDOEgqYs/sMqjelG9X6d6FbkcsPLQCgn1X9mpOeM0BDu/GKUkoXunGRvUbyHQ/ds4bk/pnnAWmQgiLZhR65iuL62L97HDsp1wDUrQ+W1xLfTV22gN8l6GVy6LDhHsOiLig8zQ2H5PcMWcdkR4POvd/kdx4K2BLgXnD0Rby3mx6X0l3yjkC9J9vOpJk1ZSp6qs+NSMuW8wf6zAGa/kfYutzjnxGQQq4tUOUq8+Oko8uNyynGxi6Ubc=","ak.pv":"9","ak.dpoabenc":"","ak.tf":o};if(""!==t)i["ak.ruds"]=t;var r={i:!1,av:function(n){var t="http.initiator";if(n&&(!n[t]||"spa_hard"===n[t]))i["ak.feo"]=void 0!==e.aFeoApplied?1:0,BOOMR.addVar(i)},rv:function(){var e=["ak.cport","ak.cr","ak.csrc","ak.gh","ak.ipv","ak.m","ak.n","ak.ol","ak.proto","ak.quicv","ak.tlsv","ak.0rtt","ak.0rtt.ed","ak.r","ak.acc","ak.t","ak.tf"];BOOMR.removeVar(e)}};BOOMR.plugins.AK={akVars:i,akDNSPreFetchDomain:a,init:function(){if(!r.i){var e=BOOMR.subscribe;e("before_beacon",r.av,null,null),e("onbeacon",r.rv,null,null),r.i=!0}return this},is_complete:function(){return!0}}}}()}(window);</script></head>
+<body>
+      <form method="post" action="./PressReleaseIframePage.aspx?PRID=2012011&amp;reg=48&amp;lang=2" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="sc_HiddenField" id="sc_HiddenField" value="" />
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZPQet1wIx1Q48y3xJY2k25Y7qxH5RrQ9qQcN-OiTC9guZtri9w2&amp;t=639246310404186790" type="text/javascript"></script>
+
+
+<script src="/ScriptResource.axd?d=x6wALODbMJK5e0eRC_p1LdIxBJXt0U_WW5GWfJqHAqo6frgCmGRfEywglicTersO2OKrFhK1gAIp0Wk2al2YrpdR3uWqH6f4nfjBsCyRUfTUUVmb0&amp;t=ffffffffecf8d3f2" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=P5lTttoqSeZXoYRLQMIScH645UK3RD852IErF2548Wz9Ssv0rLjB4fhVKnHcMpqkaMHpNAGOeWY02Lf4aBYN9-dVBme_SNK5KJwmFQNpMixYDZ7M0&amp;t=ffffffffecf8d3f2" type="text/javascript"></script>
+<script src="/PressReleaseIframePage.aspx?_TSM_HiddenField_=sc_HiddenField&amp;_TSM_CombinedScripts_=%3b%3bAjaxControlToolkit%2c+Version%3d3.5.7.123%2c+Culture%3dneutral%2c+PublicKeyToken%3d28f01b0e84b6d53e%3aen-US%3a5a4df314-b4a2-4da2-a207-9284f1b1e96c%3ade1feab2%3af2c8e708%3a8613aea7%3af9cec9bc%3a3202a5a2%3aab09e3fe%3a87104b7c%3a720a52bf%3a589eaa30%3aa67c2700%3abe6fb298" type="text/javascript"></script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="8166A38A" />
+	<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="bMMbUVsli+B6Z96jYf0eAOLd7OsEqphlZ3Mg5FzkH8qIC8812bB9Fhufj0dySX0wpYZrnt8El0dIQL4o5U4wNXxap+QF6K8uxV2cIHNMKdohNcpRLrlfRfzuNOghfqdyOdR7izNybukJArjaredd2QMAxuMJsZzvNCQ+CrqkjIa2EXna0MZ74Qm0fSSXj/tLnKauD5tUVpNQw05NLVJrjnu+pi8OWzwjUp3Er197euQu9rTfSCnhxN64b9r+XfyDKMqfn0Jnregv9wmMVxx3BsAcldE=" />
+</div>
+                              
+            <div id="templateCss"></div>
+            <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('sc', 'form1', ['tupdate12','update12'], [], [], 90, '');
+//]]>
+</script>
+
+            <input type="hidden" name="hfGridHtml" id="hfGridHtml" />
+            <div class="container" style='margin-bottom: 50px;'>
+                  <div id="accessories">
+
+                        
+                        <div class="pull-right" style="display: flex">
+                              <div id="voll"></div>
+                              <div id="vollDT"></div>
+                              
+                              
+<div class="print-icons">
+<input type="image" name="Print1$print" id="Print1_print" aria-label="Print" src="images/printer_icon.png" alt="print page button" style="padding: 5px 10px 5px 10px;" />
+</div>
+                        </div>
+                  </div>
+                  <input type="hidden" name="hydpermid" id="hydpermid" value="2012011" />
+                  
+
+
+
+                  <div class="innner-page-main-about-us-content-right-part">
+
+                        <div id="MinistryName" class="MinistryNameSubhead text-center">
+                              युवा कार्यक्रम एवं खेल मंत्रालय 
+                        </div>
+                        
+                        <div id="lg_g"><div class='log_oo'>  <img src='https://static.pib.gov.in/WriteReadData/specificdocs/photo/2021/aug/ph202183101.png' alt='azadi ka amrit mahotsav' /> </div></div>
+
+
+
+
+
+                        <div class="text-center event-heading-background">
+                              
+                              <h2 id="Titleh2">
+                                    लोकसभा अध्यक्ष श्री ओम बिरला और खेल मंत्री श्री अनुराग सिंह ठाकुर ने राष्ट्रीय युवा संसद महोत्सव, 2024 के समापन समारोह को संबोधित किया
+                              </h2>
+                              <h3 id="Subtitleh3">
+                                    <span id="ltrSubtitle"><br/>हरियाणा के यतिन भास्कर दुग्गल ने पहला, तमिलनाडु की वैष्णा पिचाई ने दूसरा और राजस्थान की कनिष्का शर्मा ने तीसरा पुरस्कार जीता<br/><br/>युवाओं की सोचने की क्षमता, कुछ नया करने की काबिलियत और काम करने का उत्साह 2047 तक भारत को &#39;विकसित भारत&#39; बनाने में महत्वपूर्ण भूमिका निभाएगा: श्री ओम बिरला<br/><br/>युवाओं की दृढ़ आवाज एक राष्ट्र के रूप में भारत के दृढ़ संकल्प को दर्शाती है: श्री अनुराग सिंह ठाकुर</span>
+                              </h3>
+                        </div>
+
+                        <div id="PrDateTime" class="ReleaseDateSubHeaddateTime text-center pt20">
+                              प्रविष्टि तिथि:
+                06 MAR 2024 5:10PM by PIB Delhi
+                        </div>
+                        
+                        <div class='pt20'>
+                        </div>
+                        <input type="hidden" name="hydphotoUrl" id="hydphotoUrl" />
+                        
+                        <p style="text-align:justify"><span style="font-size:16px"><span style="font-family:Mangal">लोकसभा अध्यक्ष श्री ओम बिरला और केंद्रीय युवा कार्यक्रम और खेल मंत्री श्री अनुराग सिंह ठाकुर ने आज नई दिल्ली में संसद भवन के सेंट्रल हॉल में राष्ट्रीय युवा संसद महोत्सव, 2024 के समापन समारोह को संबोधित किया।</span></span></p>
+
+<p style="text-align:center"><span style="font-size:16px"><span style="font-family:Mangal"><img alt="https://static.pib.gov.in/WriteReadData/userfiles/image/image001BDNZ.jpg" id="Picture_x0020_1" src="https://static.pib.gov.in/WriteReadData/userfiles/image/image001BDNZ.jpg" style="height:300.75pt; width:451.5pt" /> </span></span></p>
+
+<p style="text-align:center"><span style="font-size:16px"><span style="font-family:Mangal"><img alt="https://static.pib.gov.in/WriteReadData/userfiles/image/image0027P0K.jpg" id="Picture_x0020_10" src="https://static.pib.gov.in/WriteReadData/userfiles/image/image0027P0K.jpg" style="height:300.75pt; width:451.5pt" /> </span></span></p>
+
+<p style="text-align:center"><span style="font-size:16px"><strong><em><span style="font-family:Mangal">हरियाणा से श्री यतिन भास्कर दुग्गल (प्रथम पुरस्कार विजेता)</span></em></strong></span></p>
+
+<p style="text-align:center"><span style="font-size:16px"><span style="font-family:Mangal"><img alt="https://static.pib.gov.in/WriteReadData/userfiles/image/image003EOQU.jpg" id="Picture_x0020_13" src="https://static.pib.gov.in/WriteReadData/userfiles/image/image003EOQU.jpg" style="height:282pt; width:400.5pt" /> </span></span></p>
+
+<p style="text-align:center"><span style="font-size:16px"><strong><em><span style="font-family:Mangal">तमिलनाडु से सुश्री वैष्णा पिचाई (द्वितीय पुरस्कार विजेता)</span></em></strong></span></p>
+
+<p style="text-align:center"><span style="font-size:16px"><span style="font-family:Mangal"><img alt="https://static.pib.gov.in/WriteReadData/userfiles/image/image0047GP5.jpg" id="Picture_x0020_16" src="https://static.pib.gov.in/WriteReadData/userfiles/image/image0047GP5.jpg" style="height:254.25pt; width:381.75pt" /> </span></span></p>
+
+<p style="text-align:center"><span style="font-size:16px"><strong><em><span style="font-family:Mangal">राजस्थान से कनिष्क शर्मा (तीसरा पुरस्कार विजेता)</span></em></strong></span></p>
+
+<p style="text-align:justify"><span style="font-size:16px"><span style="font-family:Mangal">सभा को संबोधित करते हुए श्री ओम बिरला ने सभी प्रतिभागियों और विजेताओं को बधाई दी। उन्होंने कहा कि सेंट्रल हॉल का एक इतिहास है और आजादी के बाद संविधान निर्माण में इस हॉल की अहम भूमिका थी। श्री ओम बिरला ने यह भी कहा कि प्रधानमंत्री श्री नरेन्द्र मोदी को युवाओं से और देश के <em>विकसित भारत</em> के लक्ष्य को हासिल करने में बहुत उम्मीदें हैं। उन्होंने यह भी कहा कि युवाओं की सोचने की क्षमता, कुछ नया करने की क्षमता और काम करने का उत्साह 2047 तक भारत को </span><em><span style="font-family:Mangal">&#39;</span></em><em><span style="font-family:Mangal">विकसित भारत</span></em><em><span style="font-family:Mangal">&#39;</span></em> <span style="font-family:Mangal">बनाने में महत्वपूर्ण भूमिका निभाएगा। उन्होंने आगे कहा कि भारत न केवल एक विकसित भारत बनेगा बल्कि पूरी दुनिया को रास्ता भी दिखाएगा। उन्होंने कहा कि भारत आज आधुनिकीकरण की ओर बढ़ रहा है और साथ ही अपनी विरासत को भी बरकरार रख रहा है।</span></span></p>
+
+<p style="text-align:justify"><span style="font-size:16px"><span style="font-family:Mangal">इस अवसर पर बोलते हुए केंद्रीय युवा कार्यक्रम और खेल मंत्री श्री अनुराग सिंह ठाकुर ने कहा कि युवाओं की दृढ़ आवाज एक राष्ट्र के रूप में भारत की दृढ़ संकल्प को दर्शाती है। उन्होंने कहा कि भारत ने प्रौद्योगिकी के सकारात्मक उपयोग और दुनिया की पांच नाजुक अर्थव्यवस्थाओं से शीर्ष पांच अर्थव्यवस्थाओं में इसकी प्रगति देखी है।</span></span></p>
+
+<p style="text-align:justify"><span style="font-size:16px"><span style="font-family:Mangal">उन्होंने यह भी कहा कि भारत कमजोर नेतृत्व से मजबूत नेतृत्व की ओर बढ़ चुका है और आज विश्व नेताओं के साथ कंधे से कंधा मिलाकर चल सकता है। उन्होंने इस तथ्य पर भी प्रकाश डाला कि पिछले 10 वर्षों में प्रधानमंत्री श्री नरेन्द्र मोदी के नेतृत्व में सरकार ने लगभग 250 करोड़ गरीबों को बहुआयामी गरीबी से बाहर निकाला है। उन्होंने यह भी कहा कि यह केवल प्रतिबद्धता, प्रौद्योगिकी के उपयोग और सिस्टम में पारदर्शिता और जवाबदेही लाने से ही संभव है। उन्होंने इस बात पर भी प्रकाश डाला कि भारत नेट इंपोर्टर से नेट एक्सपोर्टर बनने; यूपीआई से आर्टिफिशियल इंटेलिजेंस तक और मेरा भारत से विकसित भारत बनने की ओर बढ़ रहा है।</span></span></p>
+
+<p style="text-align:justify"><span style="font-size:16px"><span style="font-family:Mangal">उन्होंने प्रतिभागियों से सरकारी नीतियों को स्थानीय भाषा में लोगों तक पहुंचाने के लिए यूट्यूब जैसे विभिन्न प्लेटफार्मों का उपयोग करने का भी आग्रह किया। उन्होंने युवाओं से टीम के नेतृत्व वाले नेतृत्व पर ध्यान केंद्रित करने का भी आग्रह किया और कहा कि आज बनाया गया नेटवर्क जीवन में आपका नेट वर्थ होगा।</span></span></p>
+
+<p style="text-align:justify"><span style="font-size:16px"><span style="font-family:Mangal">इस वर्ष राष्ट्रीय युवा संसद का <strong>आयोजन </strong></span><strong><span style="font-family:Mangal">&#39;</span></strong><strong><span style="font-family:Mangal">युवाओं की आवाज</span></strong><strong><span style="font-family:Mangal">: राष्ट्र परिवर्तन के लिए जुड़ाव और सशक्त</span></strong><strong><span style="font-family:Mangal">&#39;</span></strong> <span style="font-family:Mangal">विषय पर आधारित किया जा रहा है।</span></span></p>
+
+<p style="text-align:justify"><span style="font-size:16px"><span style="font-family:Mangal">राष्ट्रीय युवा संसद महोत्सव, 2024 का आयोजन 9 फरवरी 2024 से 6 मार्च 2024 तक पूरे देश में किया गया है। यह युवा संसद देश के 785 जिलों को कवर करते हुए तीन स्तरों पर आयोजित की गई है।</span></span></p>
+
+<p style="text-align:justify"><span style="font-size:16px"><span style="font-family:Mangal">जिला युवा संसद का आयोजन 9 फरवरी 2024 से 14 फरवरी 2024 तक किया गया। जिला युवा संसद-2024 के विजेताओं ने 19 से 24 फरवरी 2024 तक राज्य युवा संसद में भाग लिया।</span></span></p>
+
+<p style="text-align:justify"><span style="font-size:16px"><span style="font-family:Mangal">87 राज्य-स्तरीय विजेता 5 और 6 मार्च 2024 को संसद के केंद्रीय कक्ष में आयोजित होने वाले राष्ट्रीय युवा संसद-2024 के फाइनल के लिए नई दिल्ली में एकत्रित होंगे। 87 राज्य विजेता (प्रथम , दूसरे और तीसरे पुरस्कार विजेता) राष्ट्रीय युवा संसद में भाग लेंगे, जिनमें से 29 (प्रत्येक एसवाईपी के प्रथम स्थान धारक) दिए गए विषयों पर बोलेंगे। शेष 58 राष्ट्रीय युवा संसद में श्रोता के रूप में भाग लेंगे।</span></span></p>
+
+<p style="text-align:justify"><span style="font-size:16px"><strong><span style="font-family:Mangal">पृष्ठभूमि:</span></strong></span></p>
+
+<p style="text-align:justify"><span style="font-size:16px"><span style="font-family:Mangal">भारत सरकार का युवा कार्यक्रम और खेल मंत्रालय नेहरू युवा केंद्र संगठन (एनवाईकेएस) और राष्ट्रीय सेवा योजना (एनएसएस) के माध्यम से युवा संसद (जिला युवा संसद, राज्य युवा संसद और राष्ट्रीय युवा संसद) का आयोजन कर रहा है। इन युवा संसदों का उद्देश्य लोकतंत्र की जड़ों को मजबूत करना; अनुशासन, दूसरों के दृष्टिकोण के प्रति सहनशीलता की स्वस्थ आदतें विकसित करना और युवाओं को संसद की प्रथाओं और प्रक्रियाओं के बारे में जानने में सक्षम बनाना है। युवा संसद सक्रिय नागरिकता के महत्व पर जागरूकता पैदा करने और युवा जुड़ाव और भागीदारी को बढ़ावा देने में भी मदद करती है। यह युवाओं में नेतृत्व गुणों को बढ़ावा देता है और उन्हें अपनी पूरी क्षमता का एहसास करने और इस प्रक्रिया में राष्ट्र निर्माण में योगदान करने में सक्षम बनाता है।</span></span></p>
+
+<p style="text-align:justify"><span style="font-size:16px"><span style="font-family:Mangal">राष्ट्रीय युवा संसद महोत्सव (एनवाईपीएफ) 31 दिसंबर 2017 को अपने मन की बात संबोधन में प्रधानमंत्री द्वारा दिए गए विचार पर आधारित है। प्रधानमंत्री के विचार से प्रेरणा लेते हुए, पहला राष्ट्रीय युवा संसद महोत्सव (एनवाईपीएफ)-2019 जिला, राज्य और राष्ट्रीय स्तर पर 12 जनवरी से 27 फरवरी 2019 तक आयोजित किया गया था । दूसरा युवा संसद महोत्सव 23 दिसंबर 2020 से 12 जनवरी 2021 तक जिला, राज्य स्तर पर वर्चुअल मोड के माध्यम से और 11 से 12 जनवरी 2021 को राष्ट्रीय स्तर पर फिजिकल मोड में नई दिल्ली में संसद भवन के सेंट्रल हॉल में आयोजित किया गया था।&nbsp; 12 जनवरी, 2021 को समापन समारोह के दौरान, प्रधानमंत्री ने वर्चुअल मोड में लोकसभा अध्यक्ष और मंत्री (आईसी), एमओवाईएएस, शिक्षा मंत्री की गरिमामयी उपस्थिति में राष्ट्रीय युवा संसद और देश के युवाओं को संबोधित किया था। </span></span></p>
+
+<p style="text-align:justify"><span style="font-size:16px"><span style="font-family:Mangal">तीसरा राष्ट्रीय युवा संसद महोत्सव 2022 14 से 27 फरवरी, 2022 तक वर्चुअल मोड में जिला और राज्य स्तर पर और फिजिकल मोड में&nbsp; राष्ट्रीय स्तर पर 10 और 11 मार्च, 2022 को संसद के सेंट्रल हॉल, नई दिल्ली में आयोजित किया गया था।</span></span></p>
+
+<p style="text-align:justify"><span style="font-size:16px"><span style="font-family:Mangal">चौथा राष्ट्रीय युवा संसद महोत्सव 2022-2023 25 से 29 जनवरी 2023 और 3 से 7 फरवरी 2023 तक जिला और राज्य स्तर पर वर्चुअल मोड में और 1-2 मार्च, 2023 को राष्ट्रीय स्तर पर फिजिकल मोड में&nbsp; संसद के सेंट्रल हॉल, नई दिल्ली में आयोजित किया गया था। </span></span></p>
+
+<p style="text-align:center"><span style="font-size:16px"><span style="font-family:Mangal">******</span></span></p>
+
+<p style="text-align:justify"><strong><span style="font-size:16px"><span style="font-family:Mangal">एमजी/एआर/आरपी/पीके</span></span></strong></p>
+
+
+                        
+                        <div id="reel_pic">
+                        </div>
+
+
+
+                        
+                        <br />
+                        <span id="ReleaseId">(रिलीज़ आईडी: 2012011)</span>
+                        <span id="lblViews">	आगंतुक पटल  : 889</span>
+                        <div>
+                              
+                        </div>
+                        
+
+                        <span id="lblRefPhoto"></span>
+
+                        <div class="BackgroundRelease">
+                              
+                        </div>
+                        <div>
+                              
+                        </div>
+                        <div class="ReleaseLang">इस विज्ञप्ति को इन भाषाओं में पढ़ें: 
+                        
+                                    
+                                    <a href='https://pib.gov.in/PressReleasePage.aspx?PRID=2011951' target="_blank">
+                                          English </a>
+                              
+                                    ,
+                              
+                                    
+                                    <a href='https://pib.gov.in/PressReleasePage.aspx?PRID=2011982' target="_blank">
+                                          Urdu </a>
+                              
+                                    ,
+                              
+                                    
+                                    <a href='https://pib.gov.in/PressReleasePage.aspx?PRID=2012071' target="_blank">
+                                          Marathi </a>
+                              
+                                    ,
+                              
+                                    
+                                    <a href='https://pib.gov.in/PressReleasePage.aspx?PRID=2012284' target="_blank">
+                                          Assamese </a>
+                              
+                                    ,
+                              
+                                    
+                                    <a href='https://pib.gov.in/PressReleasePage.aspx?PRID=2012171' target="_blank">
+                                          Punjabi </a>
+                              
+                                    ,
+                              
+                                    
+                                    <a href='https://pib.gov.in/PressReleasePage.aspx?PRID=2012018' target="_blank">
+                                          Tamil </a>
+                              
+                                    ,
+                              
+                                    
+                                    <a href='https://pib.gov.in/PressReleasePage.aspx?PRID=2012027' target="_blank">
+                                          Kannada </a>
+                              
+                        </div>
+
+                        <div class="RelTag">
+                              <ul>
+                                    
+                              </ul>
+                        </div>
+                        <div class="clear">
+                        </div>
+                        <div id="RelLink" class="RelLink">
+                              <ul>
+                                    
+                                    
+                              </ul>
+                        </div>
+                        <center>
+                              
+                        </center>
+                  </div>
+
+                  <div id="update12">
+	
+                              
+                              <input type="hidden" name="Hidden" id="Hidden" />
+                              <div id="P_CategoryManagement" class="ModalWindow" style="border-width:0px;height:60%;width:60%;overflow:auto;display: none">
+		
+                                    <div>
+                                          <input type="image" name="btnClose" id="btnClose" src="images/close_flat_icon.png" />
+                                    </div>
+                                    <div id="description">
+                                    </div>
+                                    <div class="text-center">
+                                          <h2>
+                                                
+                                                <br>
+                                                
+                                          </h2>
+                                    </div>
+                                    <br />
+                                    <div class="clear">
+                                    </div>
+                                    
+                              
+	</div>
+                        
+</div>
+            </div>
+            
+            <div id="PdfDiv" style="display: none;">
+                  <table width="100%">
+                        <tr>
+                              <td style="font-weight: 200; text-align: center">
+                                    युवा कार्यक्रम एवं खेल मंत्रालय 
+                                    <div style="height: 30px; width: 100%;">
+                                    </div>
+                                    <div style="font-weight: 200; text-align: center; font-size: 30px;">
+                                          लोकसभा अध्यक्ष श्री ओम बिरला और खेल मंत्री श्री अनुराग सिंह ठाकुर ने राष्ट्रीय युवा संसद महोत्सव, 2024 के समापन समारोह को संबोधित किया
+                                    </div>
+                                    <div style="height: 30px; width: 100%;">
+                                    </div>
+                                    <div style="font-weight: 200; text-align: center; font-size: 30px;">
+                                          <div style='height:30px;width:100%;'></div>हरियाणा के यतिन भास्कर दुग्गल ने पहला, तमिलनाडु की वैष्णा पिचाई ने दूसरा और राजस्थान की कनिष्का शर्मा ने तीसरा पुरस्कार जीता<div style='height:30px;width:100%;'></div><div style='height:30px;width:100%;'></div>युवाओं की सोचने की क्षमता, कुछ नया करने की काबिलियत और काम करने का उत्साह 2047 तक भारत को &#39;विकसित भारत&#39; बनाने में महत्वपूर्ण भूमिका निभाएगा: श्री ओम बिरला<div style='height:30px;width:100%;'></div><div style='height:30px;width:100%;'></div>युवाओं की दृढ़ आवाज एक राष्ट्र के रूप में भारत के दृढ़ संकल्प को दर्शाती है: श्री अनुराग सिंह ठाकुर
+                                    </div>
+                                    <div style="height: 30px; width: 100%;">
+                                    </div>
+                                    <div style="text-align: center; font-size: 14px;">
+                                          प्रविष्टि तिथि:
+                        06 MAR 2024 5:10PM by PIB Delhi
+                                    </div>
+                                    <div style="height: 30px; width: 100%;">
+                                    </div>
+                                    <div style="font-weight: 200; text-align: left; font-size: 16px;">
+                                          <p style="text-align:justify"><span style="font-size:16px"><span style="font-family:Mangal">लोकसभा अध्यक्ष श्री ओम बिरला और केंद्रीय युवा कार्यक्रम और खेल मंत्री श्री अनुराग सिंह ठाकुर ने आज नई दिल्ली में संसद भवन के सेंट्रल हॉल में राष्ट्रीय युवा संसद महोत्सव, 2024 के समापन समारोह को संबोधित किया।</span></span></p>
+
+<p style="text-align:center"><span style="font-size:16px"><span style="font-family:Mangal"><img alt="https://static.pib.gov.in/WriteReadData/userfiles/image/image001BDNZ.jpg" id="Picture_x0020_1" src="https://static.pib.gov.in/WriteReadData/userfiles/image/image001BDNZ.jpg" style="height:300.75pt; width:451.5pt" /> </span></span></p>
+
+<p style="text-align:center"><span style="font-size:16px"><span style="font-family:Mangal"><img alt="https://static.pib.gov.in/WriteReadData/userfiles/image/image0027P0K.jpg" id="Picture_x0020_10" src="https://static.pib.gov.in/WriteReadData/userfiles/image/image0027P0K.jpg" style="height:300.75pt; width:451.5pt" /> </span></span></p>
+
+<p style="text-align:center"><span style="font-size:16px"><strong><em><span style="font-family:Mangal">हरियाणा से श्री यतिन भास्कर दुग्गल (प्रथम पुरस्कार विजेता)</span></em></strong></span></p>
+
+<p style="text-align:center"><span style="font-size:16px"><span style="font-family:Mangal"><img alt="https://static.pib.gov.in/WriteReadData/userfiles/image/image003EOQU.jpg" id="Picture_x0020_13" src="https://static.pib.gov.in/WriteReadData/userfiles/image/image003EOQU.jpg" style="height:282pt; width:400.5pt" /> </span></span></p>
+
+<p style="text-align:center"><span style="font-size:16px"><strong><em><span style="font-family:Mangal">तमिलनाडु से सुश्री वैष्णा पिचाई (द्वितीय पुरस्कार विजेता)</span></em></strong></span></p>
+
+<p style="text-align:center"><span style="font-size:16px"><span style="font-family:Mangal"><img alt="https://static.pib.gov.in/WriteReadData/userfiles/image/image0047GP5.jpg" id="Picture_x0020_16" src="https://static.pib.gov.in/WriteReadData/userfiles/image/image0047GP5.jpg" style="height:254.25pt; width:381.75pt" /> </span></span></p>
+
+<p style="text-align:center"><span style="font-size:16px"><strong><em><span style="font-family:Mangal">राजस्थान से कनिष्क शर्मा (तीसरा पुरस्कार विजेता)</span></em></strong></span></p>
+
+<p style="text-align:justify"><span style="font-size:16px"><span style="font-family:Mangal">सभा को संबोधित करते हुए श्री ओम बिरला ने सभी प्रतिभागियों और विजेताओं को बधाई दी। उन्होंने कहा कि सेंट्रल हॉल का एक इतिहास है और आजादी के बाद संविधान निर्माण में इस हॉल की अहम भूमिका थी। श्री ओम बिरला ने यह भी कहा कि प्रधानमंत्री श्री नरेन्द्र मोदी को युवाओं से और देश के <em>विकसित भारत</em> के लक्ष्य को हासिल करने में बहुत उम्मीदें हैं। उन्होंने यह भी कहा कि युवाओं की सोचने की क्षमता, कुछ नया करने की क्षमता और काम करने का उत्साह 2047 तक भारत को </span><em><span style="font-family:Mangal">&#39;</span></em><em><span style="font-family:Mangal">विकसित भारत</span></em><em><span style="font-family:Mangal">&#39;</span></em> <span style="font-family:Mangal">बनाने में महत्वपूर्ण भूमिका निभाएगा। उन्होंने आगे कहा कि भारत न केवल एक विकसित भारत बनेगा बल्कि पूरी दुनिया को रास्ता भी दिखाएगा। उन्होंने कहा कि भारत आज आधुनिकीकरण की ओर बढ़ रहा है और साथ ही अपनी विरासत को भी बरकरार रख रहा है।</span></span></p>
+
+<p style="text-align:justify"><span style="font-size:16px"><span style="font-family:Mangal">इस अवसर पर बोलते हुए केंद्रीय युवा कार्यक्रम और खेल मंत्री श्री अनुराग सिंह ठाकुर ने कहा कि युवाओं की दृढ़ आवाज एक राष्ट्र के रूप में भारत की दृढ़ संकल्प को दर्शाती है। उन्होंने कहा कि भारत ने प्रौद्योगिकी के सकारात्मक उपयोग और दुनिया की पांच नाजुक अर्थव्यवस्थाओं से शीर्ष पांच अर्थव्यवस्थाओं में इसकी प्रगति देखी है।</span></span></p>
+
+<p style="text-align:justify"><span style="font-size:16px"><span style="font-family:Mangal">उन्होंने यह भी कहा कि भारत कमजोर नेतृत्व से मजबूत नेतृत्व की ओर बढ़ चुका है और आज विश्व नेताओं के साथ कंधे से कंधा मिलाकर चल सकता है। उन्होंने इस तथ्य पर भी प्रकाश डाला कि पिछले 10 वर्षों में प्रधानमंत्री श्री नरेन्द्र मोदी के नेतृत्व में सरकार ने लगभग 250 करोड़ गरीबों को बहुआयामी गरीबी से बाहर निकाला है। उन्होंने यह भी कहा कि यह केवल प्रतिबद्धता, प्रौद्योगिकी के उपयोग और सिस्टम में पारदर्शिता और जवाबदेही लाने से ही संभव है। उन्होंने इस बात पर भी प्रकाश डाला कि भारत नेट इंपोर्टर से नेट एक्सपोर्टर बनने; यूपीआई से आर्टिफिशियल इंटेलिजेंस तक और मेरा भारत से विकसित भारत बनने की ओर बढ़ रहा है।</span></span></p>
+
+<p style="text-align:justify"><span style="font-size:16px"><span style="font-family:Mangal">उन्होंने प्रतिभागियों से सरकारी नीतियों को स्थानीय भाषा में लोगों तक पहुंचाने के लिए यूट्यूब जैसे विभिन्न प्लेटफार्मों का उपयोग करने का भी आग्रह किया। उन्होंने युवाओं से टीम के नेतृत्व वाले नेतृत्व पर ध्यान केंद्रित करने का भी आग्रह किया और कहा कि आज बनाया गया नेटवर्क जीवन में आपका नेट वर्थ होगा।</span></span></p>
+
+<p style="text-align:justify"><span style="font-size:16px"><span style="font-family:Mangal">इस वर्ष राष्ट्रीय युवा संसद का <strong>आयोजन </strong></span><strong><span style="font-family:Mangal">&#39;</span></strong><strong><span style="font-family:Mangal">युवाओं की आवाज</span></strong><strong><span style="font-family:Mangal">: राष्ट्र परिवर्तन के लिए जुड़ाव और सशक्त</span></strong><strong><span style="font-family:Mangal">&#39;</span></strong> <span style="font-family:Mangal">विषय पर आधारित किया जा रहा है।</span></span></p>
+
+<p style="text-align:justify"><span style="font-size:16px"><span style="font-family:Mangal">राष्ट्रीय युवा संसद महोत्सव, 2024 का आयोजन 9 फरवरी 2024 से 6 मार्च 2024 तक पूरे देश में किया गया है। यह युवा संसद देश के 785 जिलों को कवर करते हुए तीन स्तरों पर आयोजित की गई है।</span></span></p>
+
+<p style="text-align:justify"><span style="font-size:16px"><span style="font-family:Mangal">जिला युवा संसद का आयोजन 9 फरवरी 2024 से 14 फरवरी 2024 तक किया गया। जिला युवा संसद-2024 के विजेताओं ने 19 से 24 फरवरी 2024 तक राज्य युवा संसद में भाग लिया।</span></span></p>
+
+<p style="text-align:justify"><span style="font-size:16px"><span style="font-family:Mangal">87 राज्य-स्तरीय विजेता 5 और 6 मार्च 2024 को संसद के केंद्रीय कक्ष में आयोजित होने वाले राष्ट्रीय युवा संसद-2024 के फाइनल के लिए नई दिल्ली में एकत्रित होंगे। 87 राज्य विजेता (प्रथम , दूसरे और तीसरे पुरस्कार विजेता) राष्ट्रीय युवा संसद में भाग लेंगे, जिनमें से 29 (प्रत्येक एसवाईपी के प्रथम स्थान धारक) दिए गए विषयों पर बोलेंगे। शेष 58 राष्ट्रीय युवा संसद में श्रोता के रूप में भाग लेंगे।</span></span></p>
+
+<p style="text-align:justify"><span style="font-size:16px"><strong><span style="font-family:Mangal">पृष्ठभूमि:</span></strong></span></p>
+
+<p style="text-align:justify"><span style="font-size:16px"><span style="font-family:Mangal">भारत सरकार का युवा कार्यक्रम और खेल मंत्रालय नेहरू युवा केंद्र संगठन (एनवाईकेएस) और राष्ट्रीय सेवा योजना (एनएसएस) के माध्यम से युवा संसद (जिला युवा संसद, राज्य युवा संसद और राष्ट्रीय युवा संसद) का आयोजन कर रहा है। इन युवा संसदों का उद्देश्य लोकतंत्र की जड़ों को मजबूत करना; अनुशासन, दूसरों के दृष्टिकोण के प्रति सहनशीलता की स्वस्थ आदतें विकसित करना और युवाओं को संसद की प्रथाओं और प्रक्रियाओं के बारे में जानने में सक्षम बनाना है। युवा संसद सक्रिय नागरिकता के महत्व पर जागरूकता पैदा करने और युवा जुड़ाव और भागीदारी को बढ़ावा देने में भी मदद करती है। यह युवाओं में नेतृत्व गुणों को बढ़ावा देता है और उन्हें अपनी पूरी क्षमता का एहसास करने और इस प्रक्रिया में राष्ट्र निर्माण में योगदान करने में सक्षम बनाता है।</span></span></p>
+
+<p style="text-align:justify"><span style="font-size:16px"><span style="font-family:Mangal">राष्ट्रीय युवा संसद महोत्सव (एनवाईपीएफ) 31 दिसंबर 2017 को अपने मन की बात संबोधन में प्रधानमंत्री द्वारा दिए गए विचार पर आधारित है। प्रधानमंत्री के विचार से प्रेरणा लेते हुए, पहला राष्ट्रीय युवा संसद महोत्सव (एनवाईपीएफ)-2019 जिला, राज्य और राष्ट्रीय स्तर पर 12 जनवरी से 27 फरवरी 2019 तक आयोजित किया गया था । दूसरा युवा संसद महोत्सव 23 दिसंबर 2020 से 12 जनवरी 2021 तक जिला, राज्य स्तर पर वर्चुअल मोड के माध्यम से और 11 से 12 जनवरी 2021 को राष्ट्रीय स्तर पर फिजिकल मोड में नई दिल्ली में संसद भवन के सेंट्रल हॉल में आयोजित किया गया था।&nbsp; 12 जनवरी, 2021 को समापन समारोह के दौरान, प्रधानमंत्री ने वर्चुअल मोड में लोकसभा अध्यक्ष और मंत्री (आईसी), एमओवाईएएस, शिक्षा मंत्री की गरिमामयी उपस्थिति में राष्ट्रीय युवा संसद और देश के युवाओं को संबोधित किया था। </span></span></p>
+
+<p style="text-align:justify"><span style="font-size:16px"><span style="font-family:Mangal">तीसरा राष्ट्रीय युवा संसद महोत्सव 2022 14 से 27 फरवरी, 2022 तक वर्चुअल मोड में जिला और राज्य स्तर पर और फिजिकल मोड में&nbsp; राष्ट्रीय स्तर पर 10 और 11 मार्च, 2022 को संसद के सेंट्रल हॉल, नई दिल्ली में आयोजित किया गया था।</span></span></p>
+
+<p style="text-align:justify"><span style="font-size:16px"><span style="font-family:Mangal">चौथा राष्ट्रीय युवा संसद महोत्सव 2022-2023 25 से 29 जनवरी 2023 और 3 से 7 फरवरी 2023 तक जिला और राज्य स्तर पर वर्चुअल मोड में और 1-2 मार्च, 2023 को राष्ट्रीय स्तर पर फिजिकल मोड में&nbsp; संसद के सेंट्रल हॉल, नई दिल्ली में आयोजित किया गया था। </span></span></p>
+
+<p style="text-align:center"><span style="font-size:16px"><span style="font-family:Mangal">******</span></span></p>
+
+<p style="text-align:justify"><strong><span style="font-size:16px"><span style="font-family:Mangal">एमजी/एआर/आरपी/पीके</span></span></strong></p>
+
+                                    </div>
+                                    <div style="height: 30px; width: 100%;">
+                                    </div>
+                                    <div style="height: 30px; width: 100%;">
+                                    </div>
+                                    <div style="font-weight: 100; text-align: left; font-size: 16px;">
+                                          (रिलीज़ आईडी: 2012011)
+                                    </div>
+                                    <div style="height: 30px; width: 100%;">
+                                    </div>
+                              </td>
+                        </tr>
+                        <tr>
+                              <td style="font-weight: 200; text-align: center; font-size: 24px;"></td>
+                        </tr>
+                  </table>
+            </div>
+            <div class="clearfix">
+            </div>
+
+            
+
+            <div class="section1">
+                  <div id="frst_t">
+                        <div id="arr_rm"><div class='sticky-social_mb'><ul class='social_mb'><a href='http://www.facebook.com/share.php?u=https://pib.gov.in/PressReleasePage.aspx?PRID=2012011' target='_blank'><li class='fb_b'   ><img  src='https://static.pib.gov.in/WriteReadData/userfiles/socialmedianew/facebook.jpg' alt='Share on facebook'  width='40' /></li></a><a href='https://twitter.com/intent/tweet?url=https://pib.gov.in/PressReleasePage.aspx?PRID=2012011&text=लोकसभा अध्यक्ष श्री ओम बिरला और खेल मंत्री श्री अनुराग सिंह ठाकुर ने राष्ट्रीय युवा संसद महोत्सव, 2024 के समापन समारोह को संबोधित किया' target='_blank'><li class='twitter_r'  ><img  src='https://static.pib.gov.in/WriteReadData/specificdocs/photo/2023/aug/ph2023818240601.jpg' alt='Share on twitter' width='40' /> </li></a><a href='https://api.whatsapp.com/send?text=https://pib.gov.in/PressReleasePage.aspx?PRID=2012011' target='_blank'><li class='whatsapp_r'  ><img  src='https://static.pib.gov.in/WriteReadData/userfiles/socialmedianew/whatsapp1.png' alt='Share on whatsapp' width='40' /></li></a><a href='https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=&su=लोकसभा अध्यक्ष श्री ओम बिरला और खेल मंत्री श्री अनुराग सिंह ठाकुर ने राष्ट्रीय युवा संसद महोत्सव, 2024 के समापन समारोह को संबोधित किया&body=https://pib.gov.in/PressReleasePage.aspx?PRID=2012011&ui=2&tf=1&pli=1' title='Share by Email' target='_blank'><li class='fa-envelope_r' ><img  src='https://static.pib.gov.in/WriteReadData/userfiles/socialmedianew/email1.png' alt='Share on email'  width='40' /></li></a><a href='https://www.linkedin.com/shareArticle?mini=true&url=https://pib.gov.in/PressReleasePage.aspx?PRID=2012011&title=लोकसभा अध्यक्ष श्री ओम बिरला और खेल मंत्री श्री अनुराग सिंह ठाकुर ने राष्ट्रीय युवा संसद महोत्सव, 2024 के समापन समारोह को संबोधित किया&summary=My%20favorite%20developer%20program&source=LinkedIn' target='_blank'><li class='fa-linkedin_r'  ><img  src='https://static.pib.gov.in/WriteReadData/userfiles/socialmedianew/linkedin.png' alt='Share on linkedin' width='40' /></li></a></ul></div></div>
+                  </div>
+                  <div id="second_t">
+                        <div id="sndr_rm"><div class='sticky-social'><ul class='social'><a href='http://www.facebook.com/share.php?u=https://pib.gov.in/PressReleasePage.aspx?PRID=2012011' target='_blank'><li class='fb_b'   ><img  src='https://static.pib.gov.in/WriteReadData/userfiles/socialmedianew/facebook.jpg' alt='Share on facebook'  width='35' /></li></a><a href='https://twitter.com/intent/tweet?url=https://pib.gov.in/PressReleasePage.aspx?PRID=2012011&text=लोकसभा अध्यक्ष श्री ओम बिरला और खेल मंत्री श्री अनुराग सिंह ठाकुर ने राष्ट्रीय युवा संसद महोत्सव, 2024 के समापन समारोह को संबोधित किया' target='_blank'><li class='twitter_r'  ><img  src='https://static.pib.gov.in/WriteReadData/specificdocs/photo/2023/aug/ph2023818240601.jpg' alt='Share on twitter' width='35' /> </li></a><a href='https://api.whatsapp.com/send?text=https://pib.gov.in/PressReleasePage.aspx?PRID=2012011' target='_blank'><li class='whatsapp_r'  ><img  src='https://static.pib.gov.in/WriteReadData/userfiles/socialmedianew/whatsapp1.png' alt='Share on whatsapp' width='35' /></li></a><a href='https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=&su=लोकसभा अध्यक्ष श्री ओम बिरला और खेल मंत्री श्री अनुराग सिंह ठाकुर ने राष्ट्रीय युवा संसद महोत्सव, 2024 के समापन समारोह को संबोधित किया&body=https://pib.gov.in/PressReleasePage.aspx?PRID=2012011&ui=2&tf=1&pli=1' title='Share by Email' target='_blank'><li class='fa-envelope_r' ><img  src='https://static.pib.gov.in/WriteReadData/userfiles/socialmedianew/email1.png' alt='Share on email'  width='35' /></li></a><a href='https://www.linkedin.com/shareArticle?mini=true&url=https://pib.gov.in/PressReleasePage.aspx?PRID=2012011&title=लोकसभा अध्यक्ष श्री ओम बिरला और खेल मंत्री श्री अनुराग सिंह ठाकुर ने राष्ट्रीय युवा संसद महोत्सव, 2024 के समापन समारोह को संबोधित किया&summary=My%20favorite%20developer%20program&source=LinkedIn' target='_blank'><li class='fa-linkedin_r'  ><img  src='https://static.pib.gov.in/WriteReadData/userfiles/socialmedianew/linkedin.png' alt='Share on linkedin' width='35' /></li></a></ul></div></div>
+                  </div>
+            </div>
+            <input type="hidden" name="ltrTitlee" id="ltrTitlee" value="लोकसभा अध्यक्ष श्री ओम बिरला और खेल मंत्री श्री अनुराग सिंह ठाकुर ने राष्ट्रीय युवा संसद महोत्सव, 2024 के समापन समारोह को संबोधित किया" />
+            <input type="hidden" name="ltrSubtitlee" id="ltrSubtitlee" value="&lt;br/>हरियाणा के यतिन भास्कर दुग्गल ने पहला, तमिलनाडु की वैष्णा पिचाई ने दूसरा और राजस्थान की कनिष्का शर्मा ने तीसरा पुरस्कार जीता&lt;br/>&lt;br/>युवाओं की सोचने की क्षमता, कुछ नया करने की काबिलियत और काम करने का उत्साह 2047 तक भारत को &amp;#39;विकसित भारत&amp;#39; बनाने में महत्वपूर्ण भूमिका निभाएगा: श्री ओम बिरला&lt;br/>&lt;br/>युवाओं की दृढ़ आवाज एक राष्ट्र के रूप में भारत के दृढ़ संकल्प को दर्शाती है: श्री अनुराग सिंह ठाकुर" />
+            <input type="hidden" name="ltrDescriptionn" id="ltrDescriptionn" value="&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-size:16px&quot;>&lt;span style=&quot;font-family:Mangal&quot;>लोकसभा अध्यक्ष श्री ओम बिरला और केंद्रीय युवा कार्यक्रम और खेल मंत्री श्री अनुराग सिंह ठाकुर ने आज नई दिल्ली में संसद भवन के सेंट्रल हॉल में राष्ट्रीय युवा संसद महोत्सव, 2024 के समापन समारोह को संबोधित किया।&lt;/span>&lt;/span>&lt;/p>
+
+&lt;p style=&quot;text-align:center&quot;>&lt;span style=&quot;font-size:16px&quot;>&lt;span style=&quot;font-family:Mangal&quot;>&lt;img alt=&quot;https://static.pib.gov.in/WriteReadData/userfiles/image/image001BDNZ.jpg&quot; id=&quot;Picture_x0020_1&quot; src=&quot;https://static.pib.gov.in/WriteReadData/userfiles/image/image001BDNZ.jpg&quot; style=&quot;height:300.75pt; width:451.5pt&quot; /> &lt;/span>&lt;/span>&lt;/p>
+
+&lt;p style=&quot;text-align:center&quot;>&lt;span style=&quot;font-size:16px&quot;>&lt;span style=&quot;font-family:Mangal&quot;>&lt;img alt=&quot;https://static.pib.gov.in/WriteReadData/userfiles/image/image0027P0K.jpg&quot; id=&quot;Picture_x0020_10&quot; src=&quot;https://static.pib.gov.in/WriteReadData/userfiles/image/image0027P0K.jpg&quot; style=&quot;height:300.75pt; width:451.5pt&quot; /> &lt;/span>&lt;/span>&lt;/p>
+
+&lt;p style=&quot;text-align:center&quot;>&lt;span style=&quot;font-size:16px&quot;>&lt;strong>&lt;em>&lt;span style=&quot;font-family:Mangal&quot;>हरियाणा से श्री यतिन भास्कर दुग्गल (प्रथम पुरस्कार विजेता)&lt;/span>&lt;/em>&lt;/strong>&lt;/span>&lt;/p>
+
+&lt;p style=&quot;text-align:center&quot;>&lt;span style=&quot;font-size:16px&quot;>&lt;span style=&quot;font-family:Mangal&quot;>&lt;img alt=&quot;https://static.pib.gov.in/WriteReadData/userfiles/image/image003EOQU.jpg&quot; id=&quot;Picture_x0020_13&quot; src=&quot;https://static.pib.gov.in/WriteReadData/userfiles/image/image003EOQU.jpg&quot; style=&quot;height:282pt; width:400.5pt&quot; /> &lt;/span>&lt;/span>&lt;/p>
+
+&lt;p style=&quot;text-align:center&quot;>&lt;span style=&quot;font-size:16px&quot;>&lt;strong>&lt;em>&lt;span style=&quot;font-family:Mangal&quot;>तमिलनाडु से सुश्री वैष्णा पिचाई (द्वितीय पुरस्कार विजेता)&lt;/span>&lt;/em>&lt;/strong>&lt;/span>&lt;/p>
+
+&lt;p style=&quot;text-align:center&quot;>&lt;span style=&quot;font-size:16px&quot;>&lt;span style=&quot;font-family:Mangal&quot;>&lt;img alt=&quot;https://static.pib.gov.in/WriteReadData/userfiles/image/image0047GP5.jpg&quot; id=&quot;Picture_x0020_16&quot; src=&quot;https://static.pib.gov.in/WriteReadData/userfiles/image/image0047GP5.jpg&quot; style=&quot;height:254.25pt; width:381.75pt&quot; /> &lt;/span>&lt;/span>&lt;/p>
+
+&lt;p style=&quot;text-align:center&quot;>&lt;span style=&quot;font-size:16px&quot;>&lt;strong>&lt;em>&lt;span style=&quot;font-family:Mangal&quot;>राजस्थान से कनिष्क शर्मा (तीसरा पुरस्कार विजेता)&lt;/span>&lt;/em>&lt;/strong>&lt;/span>&lt;/p>
+
+&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-size:16px&quot;>&lt;span style=&quot;font-family:Mangal&quot;>सभा को संबोधित करते हुए श्री ओम बिरला ने सभी प्रतिभागियों और विजेताओं को बधाई दी। उन्होंने कहा कि सेंट्रल हॉल का एक इतिहास है और आजादी के बाद संविधान निर्माण में इस हॉल की अहम भूमिका थी। श्री ओम बिरला ने यह भी कहा कि प्रधानमंत्री श्री नरेन्द्र मोदी को युवाओं से और देश के &lt;em>विकसित भारत&lt;/em> के लक्ष्य को हासिल करने में बहुत उम्मीदें हैं। उन्होंने यह भी कहा कि युवाओं की सोचने की क्षमता, कुछ नया करने की क्षमता और काम करने का उत्साह 2047 तक भारत को &lt;/span>&lt;em>&lt;span style=&quot;font-family:Mangal&quot;>&amp;#39;&lt;/span>&lt;/em>&lt;em>&lt;span style=&quot;font-family:Mangal&quot;>विकसित भारत&lt;/span>&lt;/em>&lt;em>&lt;span style=&quot;font-family:Mangal&quot;>&amp;#39;&lt;/span>&lt;/em> &lt;span style=&quot;font-family:Mangal&quot;>बनाने में महत्वपूर्ण भूमिका निभाएगा। उन्होंने आगे कहा कि भारत न केवल एक विकसित भारत बनेगा बल्कि पूरी दुनिया को रास्ता भी दिखाएगा। उन्होंने कहा कि भारत आज आधुनिकीकरण की ओर बढ़ रहा है और साथ ही अपनी विरासत को भी बरकरार रख रहा है।&lt;/span>&lt;/span>&lt;/p>
+
+&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-size:16px&quot;>&lt;span style=&quot;font-family:Mangal&quot;>इस अवसर पर बोलते हुए केंद्रीय युवा कार्यक्रम और खेल मंत्री श्री अनुराग सिंह ठाकुर ने कहा कि युवाओं की दृढ़ आवाज एक राष्ट्र के रूप में भारत की दृढ़ संकल्प को दर्शाती है। उन्होंने कहा कि भारत ने प्रौद्योगिकी के सकारात्मक उपयोग और दुनिया की पांच नाजुक अर्थव्यवस्थाओं से शीर्ष पांच अर्थव्यवस्थाओं में इसकी प्रगति देखी है।&lt;/span>&lt;/span>&lt;/p>
+
+&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-size:16px&quot;>&lt;span style=&quot;font-family:Mangal&quot;>उन्होंने यह भी कहा कि भारत कमजोर नेतृत्व से मजबूत नेतृत्व की ओर बढ़ चुका है और आज विश्व नेताओं के साथ कंधे से कंधा मिलाकर चल सकता है। उन्होंने इस तथ्य पर भी प्रकाश डाला कि पिछले 10 वर्षों में प्रधानमंत्री श्री नरेन्द्र मोदी के नेतृत्व में सरकार ने लगभग 250 करोड़ गरीबों को बहुआयामी गरीबी से बाहर निकाला है। उन्होंने यह भी कहा कि यह केवल प्रतिबद्धता, प्रौद्योगिकी के उपयोग और सिस्टम में पारदर्शिता और जवाबदेही लाने से ही संभव है। उन्होंने इस बात पर भी प्रकाश डाला कि भारत नेट इंपोर्टर से नेट एक्सपोर्टर बनने; यूपीआई से आर्टिफिशियल इंटेलिजेंस तक और मेरा भारत से विकसित भारत बनने की ओर बढ़ रहा है।&lt;/span>&lt;/span>&lt;/p>
+
+&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-size:16px&quot;>&lt;span style=&quot;font-family:Mangal&quot;>उन्होंने प्रतिभागियों से सरकारी नीतियों को स्थानीय भाषा में लोगों तक पहुंचाने के लिए यूट्यूब जैसे विभिन्न प्लेटफार्मों का उपयोग करने का भी आग्रह किया। उन्होंने युवाओं से टीम के नेतृत्व वाले नेतृत्व पर ध्यान केंद्रित करने का भी आग्रह किया और कहा कि आज बनाया गया नेटवर्क जीवन में आपका नेट वर्थ होगा।&lt;/span>&lt;/span>&lt;/p>
+
+&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-size:16px&quot;>&lt;span style=&quot;font-family:Mangal&quot;>इस वर्ष राष्ट्रीय युवा संसद का &lt;strong>आयोजन &lt;/strong>&lt;/span>&lt;strong>&lt;span style=&quot;font-family:Mangal&quot;>&amp;#39;&lt;/span>&lt;/strong>&lt;strong>&lt;span style=&quot;font-family:Mangal&quot;>युवाओं की आवाज&lt;/span>&lt;/strong>&lt;strong>&lt;span style=&quot;font-family:Mangal&quot;>: राष्ट्र परिवर्तन के लिए जुड़ाव और सशक्त&lt;/span>&lt;/strong>&lt;strong>&lt;span style=&quot;font-family:Mangal&quot;>&amp;#39;&lt;/span>&lt;/strong> &lt;span style=&quot;font-family:Mangal&quot;>विषय पर आधारित किया जा रहा है।&lt;/span>&lt;/span>&lt;/p>
+
+&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-size:16px&quot;>&lt;span style=&quot;font-family:Mangal&quot;>राष्ट्रीय युवा संसद महोत्सव, 2024 का आयोजन 9 फरवरी 2024 से 6 मार्च 2024 तक पूरे देश में किया गया है। यह युवा संसद देश के 785 जिलों को कवर करते हुए तीन स्तरों पर आयोजित की गई है।&lt;/span>&lt;/span>&lt;/p>
+
+&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-size:16px&quot;>&lt;span style=&quot;font-family:Mangal&quot;>जिला युवा संसद का आयोजन 9 फरवरी 2024 से 14 फरवरी 2024 तक किया गया। जिला युवा संसद-2024 के विजेताओं ने 19 से 24 फरवरी 2024 तक राज्य युवा संसद में भाग लिया।&lt;/span>&lt;/span>&lt;/p>
+
+&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-size:16px&quot;>&lt;span style=&quot;font-family:Mangal&quot;>87 राज्य-स्तरीय विजेता 5 और 6 मार्च 2024 को संसद के केंद्रीय कक्ष में आयोजित होने वाले राष्ट्रीय युवा संसद-2024 के फाइनल के लिए नई दिल्ली में एकत्रित होंगे। 87 राज्य विजेता (प्रथम , दूसरे और तीसरे पुरस्कार विजेता) राष्ट्रीय युवा संसद में भाग लेंगे, जिनमें से 29 (प्रत्येक एसवाईपी के प्रथम स्थान धारक) दिए गए विषयों पर बोलेंगे। शेष 58 राष्ट्रीय युवा संसद में श्रोता के रूप में भाग लेंगे।&lt;/span>&lt;/span>&lt;/p>
+
+&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-size:16px&quot;>&lt;strong>&lt;span style=&quot;font-family:Mangal&quot;>पृष्ठभूमि:&lt;/span>&lt;/strong>&lt;/span>&lt;/p>
+
+&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-size:16px&quot;>&lt;span style=&quot;font-family:Mangal&quot;>भारत सरकार का युवा कार्यक्रम और खेल मंत्रालय नेहरू युवा केंद्र संगठन (एनवाईकेएस) और राष्ट्रीय सेवा योजना (एनएसएस) के माध्यम से युवा संसद (जिला युवा संसद, राज्य युवा संसद और राष्ट्रीय युवा संसद) का आयोजन कर रहा है। इन युवा संसदों का उद्देश्य लोकतंत्र की जड़ों को मजबूत करना; अनुशासन, दूसरों के दृष्टिकोण के प्रति सहनशीलता की स्वस्थ आदतें विकसित करना और युवाओं को संसद की प्रथाओं और प्रक्रियाओं के बारे में जानने में सक्षम बनाना है। युवा संसद सक्रिय नागरिकता के महत्व पर जागरूकता पैदा करने और युवा जुड़ाव और भागीदारी को बढ़ावा देने में भी मदद करती है। यह युवाओं में नेतृत्व गुणों को बढ़ावा देता है और उन्हें अपनी पूरी क्षमता का एहसास करने और इस प्रक्रिया में राष्ट्र निर्माण में योगदान करने में सक्षम बनाता है।&lt;/span>&lt;/span>&lt;/p>
+
+&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-size:16px&quot;>&lt;span style=&quot;font-family:Mangal&quot;>राष्ट्रीय युवा संसद महोत्सव (एनवाईपीएफ) 31 दिसंबर 2017 को अपने मन की बात संबोधन में प्रधानमंत्री द्वारा दिए गए विचार पर आधारित है। प्रधानमंत्री के विचार से प्रेरणा लेते हुए, पहला राष्ट्रीय युवा संसद महोत्सव (एनवाईपीएफ)-2019 जिला, राज्य और राष्ट्रीय स्तर पर 12 जनवरी से 27 फरवरी 2019 तक आयोजित किया गया था । दूसरा युवा संसद महोत्सव 23 दिसंबर 2020 से 12 जनवरी 2021 तक जिला, राज्य स्तर पर वर्चुअल मोड के माध्यम से और 11 से 12 जनवरी 2021 को राष्ट्रीय स्तर पर फिजिकल मोड में नई दिल्ली में संसद भवन के सेंट्रल हॉल में आयोजित किया गया था।&amp;nbsp; 12 जनवरी, 2021 को समापन समारोह के दौरान, प्रधानमंत्री ने वर्चुअल मोड में लोकसभा अध्यक्ष और मंत्री (आईसी), एमओवाईएएस, शिक्षा मंत्री की गरिमामयी उपस्थिति में राष्ट्रीय युवा संसद और देश के युवाओं को संबोधित किया था। &lt;/span>&lt;/span>&lt;/p>
+
+&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-size:16px&quot;>&lt;span style=&quot;font-family:Mangal&quot;>तीसरा राष्ट्रीय युवा संसद महोत्सव 2022 14 से 27 फरवरी, 2022 तक वर्चुअल मोड में जिला और राज्य स्तर पर और फिजिकल मोड में&amp;nbsp; राष्ट्रीय स्तर पर 10 और 11 मार्च, 2022 को संसद के सेंट्रल हॉल, नई दिल्ली में आयोजित किया गया था।&lt;/span>&lt;/span>&lt;/p>
+
+&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-size:16px&quot;>&lt;span style=&quot;font-family:Mangal&quot;>चौथा राष्ट्रीय युवा संसद महोत्सव 2022-2023 25 से 29 जनवरी 2023 और 3 से 7 फरवरी 2023 तक जिला और राज्य स्तर पर वर्चुअल मोड में और 1-2 मार्च, 2023 को राष्ट्रीय स्तर पर फिजिकल मोड में&amp;nbsp; संसद के सेंट्रल हॉल, नई दिल्ली में आयोजित किया गया था। &lt;/span>&lt;/span>&lt;/p>
+
+&lt;p style=&quot;text-align:center&quot;>&lt;span style=&quot;font-size:16px&quot;>&lt;span style=&quot;font-family:Mangal&quot;>******&lt;/span>&lt;/span>&lt;/p>
+
+&lt;p style=&quot;text-align:justify&quot;>&lt;strong>&lt;span style=&quot;font-size:16px&quot;>&lt;span style=&quot;font-family:Mangal&quot;>एमजी/एआर/आरपी/पीके&lt;/span>&lt;/span>&lt;/strong>&lt;/p>
+" />
+            <script type="text/javascript">
+                  var mPlayer = document.getElementById("background_music");
+                  var mPlayAction = document.getElementById("playbutton");
+
+                  var isPlaying = false;
+
+                  function playAudio() {
+                        mPlayer.play();
+                        isPlaying = true;
+                        document.getElementById('stopA').style.display = "block";
+                        document.getElementById('playA').style.display = "none";
+                  }
+
+                  function pauseAudio() {
+                        mPlayer.pause();
+                        isPlaying = false;
+                        document.getElementById('playA').style.display = "block";
+                        document.getElementById('stopA').style.display = "none";
+                  }
+                  //function HandleAudio() {
+                  //    if (isPlaying == true) {
+                  //        //Playing already Pause it
+                  //        pauseAudio();
+                  //    } else {
+                  //        //Play the music
+                  //        playAudio();
+                  //    }
+                  //}
+            </script>
+            <script type="text/javascript">
+                  var synth = window.speechSynthesis;
+
+            
+                  function CleanHtml(html) {
+
+                        html = html.replace(/<script[\s\S]*?<\/script>/gi, '');
+
+                        return html;
+                  }
+                  function stripHtml(html) {
+                        let tmp = document.createElement("DIV");
+                        tmp.innerHTML = CleanHtml(html);
+                        return tmp.textContent || tmp.innerText || "";
+                  }
+            </script>
+            <script type="text/javascript">
+                  $(document).ready(function () {
+                        //for responsive tables
+                        $("table").each(function () {
+                              if (!$(this).closest(".table-responsive").length) {
+                                    $(this).wrap("<div class='table-responsive'></div>");
+                              }
+                        });
+
+                        var width = $(window).width();
+                        if (width < 768) {
+
+                              // Extra Small Device
+                              document.getElementById('frst_t').style.display = "block";
+                              document.getElementById('second_t').style.display = "none";
+
+                        } else if (width < 991) {
+                              document.getElementById('frst_t').style.display = "block";
+                              document.getElementById('second_t').style.display = "none";
+                              // Small Device
+
+                        } else if (width < 1199) {
+                              document.getElementById('frst_t').style.display = "none";
+                              document.getElementById('second_t').style.display = "block";
+                              // Medium Device
+
+                        } else {
+                              document.getElementById('frst_t').style.display = "none";
+                              document.getElementById('second_t').style.display = "block";
+                              // Large Device
+
+                        }
+                  });
+            </script>
+            <script type="text/javascript">
+                  $(document).ready(function () {
+                        var width = $(window).width();
+                        if (width < 768) {
+
+                              // Extra Small Device
+                              document.getElementById('frst_t').style.display = "block";
+                              document.getElementById('second_t').style.display = "none";
+
+                        } else if (width < 991) {
+                              document.getElementById('frst_t').style.display = "block";
+                              document.getElementById('second_t').style.display = "none";
+                              // Small Device
+
+                        } else if (width < 1199) {
+                              document.getElementById('frst_t').style.display = "none";
+                              document.getElementById('second_t').style.display = "block";
+                              // Medium Device
+
+                        } else {
+                              document.getElementById('frst_t').style.display = "none";
+                              document.getElementById('second_t').style.display = "block";
+                              // Large Device
+
+                        }
+                  });
+            </script>
+            
+            <style type="text/css">
+                  @media print {
+                        .sticky-social, .sticky-social_mb, .pull-right, #printPDF {
+                              display: none !important;
+                        }
+                  }
+
+                  .f_vl {
+                        padding-right: 30px;
+                        font-size: 17px;
+                        cursor: pointer;
+                  }
+
+                  .log_oo {
+                        // width: 20%;
+                        display: flex;
+                        justify-content: space-between;
+                  }
+
+                        .log_oo img {
+                              width: 150px;
+                              /*width: 100%;
+                    height: auto;*/
+                        }
+
+                  .sticky-social_mb {
+                        position: fixed;
+                        bottom: 0px;
+                        padding: 0px;
+                        margin: 0px;
+                        width: 100%;
+                  }
+
+                  .social_mb {
+                        list-style: none;
+                        display: flex;
+                        width: 100%;
+                        margin-bottom: -8px;
+                  }
+
+                        .social_mb a {
+                              padding: 8px 0px;
+                              font-size: 30px;
+                              transition: all 0.8s ease-in-out;
+                              width: 20% !important;
+                              text-align: center;
+                        }
+            </style>
+            <style type="text/css">
+                  .section1 {
+                        position: relative;
+                        padding: 10px 0px;
+                        width: 100%;
+                  }
+
+
+
+                  .sticky-social {
+                        position: fixed;
+                        top: 20px;
+                        left: 0px;
+                        padding: 0px;
+                        margin: 0px;
+                  }
+
+                  .social {
+                        list-style: none;
+                  }
+
+                        .social a li {
+                              padding: 8px 12px;
+                              font-size: 25px;
+                              transition: all 0.8s ease-in-out;
+                        }
+
+                              .social a li:hover {
+                                    margin-right: -30px;
+                                    box-shadow: 2px 5px 10px grey;
+                              }
+
+                                    .social a li:hover .fa {
+                                          margin-left: 20px;
+                                    }
+
+                  .fb_b {
+                        /* background-color: rgb(59, 89, 152);*/
+                        background-color: rgba(65,103,178,255);
+                  }
+
+                  .twitter_r {
+                        /* background-color: rgb(29, 161, 242);*/
+                        background-color: #000000;
+                  }
+
+                  .whatsapp_r {
+                        /* background-color: rgb(77, 194, 71);*/
+                        background-color: rgba(13,191,67,255);
+                  }
+
+                  .fa-envelope_r {
+                        /* background-color: rgb(219, 68, 55);*/
+                        background-color: #e2123d;
+                  }
+
+                  .fa-linkedin_r {
+                        background-color: rgb(0, 119, 181);
+                  }
+            </style>
+            <style type="text/css">
+                  @media only screen and (max-device-width: 767px) {
+                        p span img {
+                              max-width: 90% !important;
+                              height: auto !important;
+                        }
+
+                        p img {
+                              max-width: 90% !important;
+                              height: auto !important;
+                        }
+
+                        h2 {
+                              font-size: 20px !important;
+                              font-weight: 600 !important;
+                        }
+
+                        h3 {
+                              font-size: 18px !important;
+                              font-weight: 600 !important;
+                        }
+                  }
+            </style>
+            <style type="text/css">
+                  /* === Film Roll Badge Styling(IFFI2025 countdown) === */
+                  .film-roll-badge {
+                        position: absolute;
+                        top:82%;
+                        right: 20px;
+                        width: 230px;
+                        height: 70px;
+                        background: repeating-linear-gradient( to right, #9a2375 0px, #9a2375 18px, #6e2b8b 18px, #6e2b8b 36px );
+                        border-top: 8px solid #9a2375;
+                        border-bottom: 8px solid #9a2375;
+                        border-radius: 8px;
+                        overflow: hidden;
+                        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+                        animation: moveFilm 8s linear infinite;
+                        z-index: 10;
+                  }
+
+                        /* film sprocket holes */
+                        .film-roll-badge::before,
+                        .film-roll-badge::after {
+                              content: "";
+                              position: absolute;
+                              width: 100%;
+                              height: 10px;
+                              background: repeating-linear-gradient( to right, #9a2375 0px, #9a2375 10px, #fff 10px, #fff 20px );
+                              left: 0;
+                              z-index: 2;
+                        }
+
+                        .film-roll-badge::before {
+                              top: -4px;
+                        }
+
+                        .film-roll-badge::after {
+                              bottom: -4px;
+                        }
+
+                  .film-roll-inner {
+                        position: relative;
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        animation: flicker 2s infinite ease-in-out;
+                  }
+
+                  .countdown-text {
+                        font-size: 1.3rem;
+                        font-weight: 700;
+                        color: #fff;
+                        text-shadow: 0 0 6px rgba(255, 255, 255, 0.4), 0 0 10px #000;
+                        white-space: nowrap;
+                  }
+
+                  /* === Animations === */
+                  @keyframes moveFilm {
+                        0% {
+                              background-position: 0 0;
+                        }
+
+                        100% {
+                              background-position: 120px 0;
+                        }
+                  }
+
+                  @keyframes flicker {
+                        0%, 100% {
+                              opacity: 1;
+                        }
+
+                        50% {
+                              opacity: 0.9;
+                        }
+
+                        25% {
+                              opacity: 0.95;
+                        }
+
+                        75% {
+                              opacity: 0.85;
+                        }
+                  }
+
+                  /* === Responsive Adjustments === */
+                  @media (max-width: 1500px) {
+                        .film-roll-badge {
+                              top: 68%;
+                              right: 18px;
+                              /* width: 220px; */
+                              height: 65px;
+                              font-size: 0.85rem;
+                        }
+
+                        .press-section {
+                              margin-top: 35px;
+                        }
+                  }
+
+                  @media (max-width: 992px) {
+                        .film-roll-badge {
+                              top: 52%;
+                              right: 10px;
+                               width: 200px; 
+                              height: 60px;
+                        }
+                  }
+
+                  @media (max-width: 768px) {
+                        .film-roll-badge {
+                              top: 56%;
+                              right: 10px;
+                               width: 124px; 
+                              height: 55px;
+                        }
+
+                        .countdown-text {
+                              font-size: 0.9rem;
+                        }
+                  }
+
+                  @media (max-width: 576px) {
+                        .film-roll-badge {
+                              top: 59%;
+                              right: 5px;
+                              /* width: 160px; */
+                              height: 50px;
+                        }
+
+                        .countdown-text {
+                              font-size: 0.85rem;
+                        }
+                  }
+            </style>
+                        <script type="text/javascript">
+                  const festivalStart = new Date("2025-11-20T00:00:00").getTime();
+                  const festivalEnd = new Date("2025-11-28T23:59:59").getTime();
+
+                  const countdownElement = document.getElementById("countdown");
+
+                  const interval = setInterval(() => {
+                        const now = new Date().getTime();
+
+                        // BEFORE FESTIVAL — show days + hours left
+                        if (now < festivalStart) {
+                              const diff = festivalStart - now;
+                              const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+                              const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+
+                              countdownElement.innerHTML = `
+                ${days} Day${days !== 1 ? 's' : ''} 
+                ${hours} Hour${hours !== 1 ? 's' : ''} to go
+            `;
+
+                        }
+
+                        // DURING FESTIVAL — show 56th IFFI - Day X
+                        else if (now >= festivalStart && now <= festivalEnd) {
+                              const dayNumber = Math.floor((now - festivalStart) / (1000 * 60 * 60 * 24)) + 1;
+                              countdownElement.innerHTML = `56th IFFI - Day ${dayNumber}`;
+                        }
+
+                        // AFTER FESTIVAL — new message
+                        else {
+                              countdownElement.innerHTML = `✨ IFFI closes but never ends…`;
+
+                              // Width change logic
+                              const elements = document.querySelectorAll('.film-roll-badge');
+                              elements.forEach(el => el.style.width = "350px");
+
+                              clearInterval(interval);
+                        }
+
+                  }, 1000);
+            </script>
+
+      
+
+<script type="text/javascript">
+//<![CDATA[
+(function() {var fn = function() {$get("sc_HiddenField").value = '';Sys.Application.remove_init(fn);};Sys.Application.add_init(fn);})();Sys.Application.add_init(function() {
+    $create(Sys.Extended.UI.ModalPopupBehavior, {"BackgroundCssClass":"modalBackground","PopupControlID":"P_CategoryManagement","dynamicServicePath":"/PressReleaseIframePage.aspx","id":"mpe"}, null, null, $get("Hidden"));
+});
+//]]>
+</script>
+</form>
+</body>
+</html>

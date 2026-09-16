@@ -24,24 +24,24 @@ Keep the split for anything with real stakes or length — a concept note, a pol
 Rule of thumb: if a wrong assumption about scope would cost you more than an hour of rework to fix, write the spec.
 
 The six stages, translated
-1. Plan → Capture an intent.md
+1. Envision → Capture an intent.md
 Traditional: ideas get discussed in meetings, then someone eventually writes a proposal from memory. AI-native: as soon as an idea, problem, or opportunity surfaces, capture it in a short file — what's the pain point, who's affected, what does "done" look like, what constraints exist. This becomes the seed the agent works from, not a mental note you'll have to reconstruct later.
 
 Example for you: a one-page intent.md for the PROdiGYM concept note, or for a new GBA policy angle, before you ask Cowork to draft anything.
 
-2. Design → Compress requirements + structure into one working session
+2. Scope → Compress requirements + structure into one working session
 Traditional: a spec gets written by one person, handed to another to structure. AI-native: work the outline and the requirements out with the agent in one sitting — what sections, what evidence, what audience, what tone — rather than writing a brief separately from the drafting. Save this as spec.md or outline.md. Encode any standards you always want followed (formatting, citation style, institutional voice) as a reusable skill so you don't re-explain them each time.
 
-3. Build → Let the agent draft; you supply judgment, not sentences
+3. Draft → Let the agent draft; you supply judgment, not sentences
 Traditional: the human writes; documentation and rationale get added afterward, if at all. AI-native: the agent produces the draft (report, brief, slide deck, curriculum doc); you supply direction, sources, and correction. Keep a running context file — a CLAUDE.md-style note of institutional facts, prior decisions, and style rules — so every new session starts with the same shared understanding instead of you re-briefing from scratch.
 
-4. Test → Review continuously, not at one big gate
+4. Review → Verify continuously, not at one big gate
 Traditional: the whole draft gets reviewed once, near the end, by whoever has time. AI-native: build small checks into the process as you go — does this claim have a source, does this section answer the brief, does this contradict an earlier document. Give the agent a feedback loop (how to tell if a draft is good) rather than saving all judgment for a single final read.
 
-5. Deploy → Layered review, human attention on what matters
+5. Publish → Layered review, human attention on what matters
 Traditional: every version gets read start to finish by a senior reviewer. AI-native: let the agent do first-pass review (consistency, completeness, tone, factual gaps) and reserve your own attention for the parts that need real judgment — framing, political sensitivity, strategic implications. This is also the point where you formally "commit" the artifact: publish the report, submit the note, circulate the brief. Keep a light approval gate (a quick check before anything goes out) rather than a heavy one.
 
-6. Maintain → Close the loop
+6. Iterate → Close the loop
 Traditional: once published, a document is done; feedback is informal and often lost. AI-native: treat feedback, outcomes, and follow-up questions as new intent.mds that restart the loop. Did the policy note get a response that raises a new question? Did the concept note get feedback requiring revision? That becomes the next cycle's input, not a one-off email thread.
 
 Skills: turning repeated corrections into reviewed, versioned playbooks
@@ -82,7 +82,7 @@ Let it feed both drafting and review — the agent uses it to write, and also us
 A skill that skips the expert-review step is just an unverified assumption with a file extension.
 
 Two kinds of feedback: the document loop and the process loop
-The Maintain stage above closes a loop per document — an outcome becomes the next intent.md. That's necessary but not sufficient. It tells you whether one policy note landed well; it doesn't tell you whether your whole workflow is still worth running the way you're running it.
+The Iterate stage above closes a loop per document — an outcome becomes the next intent.md. That's necessary but not sufficient. It tells you whether one policy note landed well; it doesn't tell you whether your whole workflow is still worth running the way you're running it.
 
 Add a second, slower loop — a process reflection, on its own cadence (monthly or quarterly, not per-document):
 

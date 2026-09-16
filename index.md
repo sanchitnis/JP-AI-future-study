@@ -1,14 +1,28 @@
-# Master Knowledge Catalog & Cognitive Memory Index
+# Master Hub: JP AI Future Study Group (Projects & Collective Memory)
 
-Welcome to the **Master Index** of the AI & Future of Humanity (India Focus) Second Brain. This catalog is organized into five **Cognitive Memory Pillars**: Episodic, Semantic, Reflective, Working, and Procedural Memory.
+Welcome to the **Master Hub** of the **JP AI Future Study Group** (Jnana Prabodhini — 176 members, 13 expert seminars). This workspace combines an active **AI-Native Project Production Engine** with a 5-tier **Collective Memory Wiki**.
 
 ---
 
-## 🕒 1. Episodic Memory (`wiki/episodic/`)
-*Time-bound experiences, seminar working groups, expert dialogues, and recorded community sessions.*
+## 🚀 1. Active Study Group Projects (`projects/`)
+*Real-world knowledge deliverables running on the 6-stage committed artifact loop (`intent.md` → `spec.md` → `draft.md` → `review.md` → `final.md` → `feedback.md`).*
 
-### A. Study Group Seminars & Working Sessions
-- [[ai-meetings-overview|AI Future Study Group Meetings (Aug 2025 – Aug 2026)]]: Complete index of 13 seminar sessions across 176 members with verified Google Drive recordings:
+| Project Track | Sponsoring Domain | Primary Deliverable | Status | Expert Lead(s) |
+| :--- | :--- | :--- | :---: | :--- |
+| [`policy-brief-sovereign-ai-compute`](./projects/policy-brief-sovereign-ai-compute/) | Compute & Governance | [Democratizing Sovereign Compute in India](./projects/policy-brief-sovereign-ai-compute/final.md) | **Stage 5 (Deployed)** | Saurabh Bodas, Parag |
+| [`curriculum-foundational-ai-literacy`](./projects/curriculum-foundational-ai-literacy/) | Education & Talent | [Vernacular Voice AI for FLN Educators](./projects/curriculum-foundational-ai-literacy/final.md) | **Stage 5 (Deployed)** | Rohan Katepallewar |
+| [`teacher-training-high-school-ai-pedagogy`](./projects/teacher-training-high-school-ai-pedagogy/) | Education, Talent, Cognition | [High School Teacher AI Literacy & Socratic Pedagogy](./projects/teacher-training-high-school-ai-pedagogy/final.md) | **Stage 5 (Deployed)** | Rohan Katepallewar, Deepak Gupte, Gaurav Marathe |
+| [`concept-note-ai-workforce-resilience`](./projects/concept-note-ai-workforce-resilience/) | Labor & Economy | [Navigating the Centaur Shift in IT/BPO](./projects/concept-note-ai-workforce-resilience/final.md) | **Stage 5 (Deployed)** | Abhishek Suryawanshi, Swanand Joshi |
+| [`research-ai-in-india`](./projects/research-ai-in-india/) | Governance, Compute, Economics, Geopolitics, Defense, Education | [AI in India: Comprehensive Research Study (2024–2026)](./projects/research-ai-in-india/final.md) | **Stage 5 (Deployed)** | Saurabh Bodas, Mihir Shete, Abhishek Suryawanshi, Rohan Katepallewar |
+| [`_template-project`](./projects/_template-project/) | System Template | Reusable 6-stage project scaffold | **Standard** | Study Group Council |
+
+---
+
+## 🧠 2. Collective Memory Engine (`wiki/`)
+*The persistent, grounded knowledge graph organized into five Cognitive Memory Tiers.*
+
+### A. 🕒 Episodic Memory (`wiki/episodic/`)
+- [[ai-meetings-overview|AI Future Study Group Meetings (Aug 2025 – Aug 2026)]]: Complete index of 13 seminar sessions across 176 members:
   1. *21-Aug-2025*: [[meeting-01-cutting-edge-technology-and-perspective-building|Cutting Edge Technology & Perspective Building]] (Parag & Saurabh Bodas)
   2. *18-Sep-2025*: [[meeting-02-bharatgen-objectives-and-challenges|BharatGen - Objectives and Challenges]] (Ganesh Khude)
   3. *15-Oct-2025*: [[meeting-03-creativity-and-disruptive-impact-of-gen-ai|Creativity & The Disruptive Impact of Gen AI]] (Shraddha Ramteke)
@@ -23,85 +37,75 @@ Welcome to the **Master Index** of the AI & Future of Humanity (India Focus) Sec
   12. *15-Jul-2026*: [[meeting-12-cyber-security-and-ai|Cyber Security and Artificial Intelligence]] (Advait Marathe & Harsh Waghela)
   13. *12-Aug-2026*: [[meeting-13-ai-with-chinese-characteristics|AI with Chinese Characteristics]] (Mihir Shete)
 
-### B. Interviews & Recorded Events
-- `wiki/episodic/interviews/`: *(Individual expert conversations and podcast transcripts)*
-- `wiki/episodic/events/`: *(Conferences, symposia, and closed-door roundtables)*
+### B. 🌐 Semantic Memory (`wiki/semantic/`)
+- **Core Concepts**: [[compute-capacity-and-energy]], [[digital-public-infrastructure-for-ai]], [[ai-cybersecurity-and-critical-infrastructure]], [[ai-cognitive-revolution-and-human-agency]], [[voice-ai-and-foundational-education-india]], [[neuroscience-ai-and-brain-computer-interfaces]], [[llm-internals-and-reward-hacking]], [[physical-ai-robotics-and-world-models]], [[genai-creativity-and-knowledge-work-economics]], [[it-bpo-workforce-automation]], [[indic-foundation-models]], [[informal-economy-ai-enablement]], [[human-agency-and-ai-alignment]], [[bias-and-multilingual-fairness]], [[ai-governance-india|India AI Governance & Seven Sutras]], [[india-semiconductor-and-hardware-sovereignty|India Semiconductor & Hardware Sovereignty]], [[india-defense-ai-applications|India Defense AI Applications]].
+- **Key Entities**: [[bharatgen]], [[indiaai-mission]], [[bhashini]], [[niti-aayog-ai]], [[ai4bharat]], [[sarvam-ai|Sarvam AI]].
+- **Grounded Evidence Vault & Evaluated Literature**:
+  - [[indiaai-mission-cabinet-approval-2024|Cabinet Approval of ₹10,372 Crore IndiaAI Mission (2024)]]
+  - [[source-indiaai-mission-progress-2024-2026|IndiaAI Mission Implementation Progress (2024–2026)]] *(Score: 4.8/5.0)*
+  - [[source-india-ai-governance-guidelines-2025|India AI Governance Guidelines 2025: Seven Sutras]] *(Score: 4.8/5.0)*
+  - [[source-india-semiconductor-mission-hardware-sovereignty|India Semiconductor Mission & Hardware Sovereignty]] *(Score: 4.55/5.0)*
+  - [[source-niti-aayog-ai-inclusive-development-2025|NITI Aayog: AI for Inclusive Development & Digital ShramSetu (2025)]] *(Score: 4.55/5.0)*
+  - [[source-india-ai-defense-national-security|India AI Defense & National Security Applications]] *(Score: 3.80/5.0)*
+  - [[source-unesco-ai-competency-framework-teachers|UNESCO AI Competency Framework for Teachers (2024)]] *(Score: 4.8/5.0)*
+  - [[source-cognitive-offloading-performance-paradox|Cognitive Offloading & The Performance Paradox in AI Education (2024)]] *(Score: 4.8/5.0)*
+  - [[source-mollick-assigning-ai-socratic-tutor|Assigning AI: Socratic Tutoring & Pedagogical Prompts (Mollick & Mollick, 2023)]] *(Score: 4.9/5.0)*
+  - [[source-singapore-moe-aied-framework|Singapore MOE AIEd Framework & SLS Platform (2023–2025)]] *(Score: 4.9/5.0)*
+  - [[source-china-moe-k12-ai-guidelines|China MOE Primary & Secondary AI Education Guidelines (2025)]] *(Score: 4.9/5.0)*
+  - [[source-south-korea-ai-textbooks-case|South Korea AI Digital Textbooks Policy Case (2024–2025)]] *(Score: 4.6/5.0)*
+  - [[source-cbse-nep2020-ai-curriculum|CBSE & NEP 2020: AI Secondary Stage Roadmap & Teacher Guidelines]] *(Score: 4.7/5.0)*
+- **Comparative Analyses**:
+  - [[india-global-ai-landscape-comparison-2026|India in the Global AI Landscape (India vs. China vs. US vs. EU, 2026)]]
+  - [[k12-ai-pedagogy-india-vs-singapore-china-korea|K-12 AI Pedagogy & Anti-Deskilling Models (India vs. Singapore vs. China vs. South Korea)]]
+  - [[india-vs-china-ai-strategy|India vs. China: AI Strategy & Compute Architecture]]
+  - [[india-vs-china-compute-strategy|India vs. China: AI Compute & Infrastructure Strategy]]
+  - [[india-vs-us-ai-talent-pipelines|India vs. US: AI Talent, Brain Drain & Return Migration]]
+  - [[india-vs-eu-ai-regulation|India vs. EU: AI Regulation vs. Digital Public Infrastructure]]
+
+### C. ⚖️ Reflective Memory (`wiki/reflective/`)
+- [[india-frontier-models-vs-applications|Frontier Models vs. Application Fine-Tuning in India]]
+- [[ai-impact-on-indian-it-jobs|IT Services: Mass Displacement vs. Augmented Productivity]]
+- [[ai-regulatory-framework-india|India's AI Governance Stance (DPI Hybrid vs. EU Precautionary)]]
+- [[good-vs-bad-ai-safety-and-acceleration|Good vs. Bad AI: Existential Safety vs Accelerative Proliferation]]
+
+### D. ⚡ Working Memory (`wiki/working/`)
+- **Learning Primers**: [[primer-sovereign-compute-india]], [[curriculum-ai-and-future-of-humanity-india]], [[socratic-guide-dpi-for-ai]].
+- **NotebookLM Packs**: [[pack-india-sovereign-ai]], [[pack-labor-and-future-of-work]].
+
+### E. 🛠️ Procedural Memory (`wiki/procedural/`)
+- **Operational Playbooks**:
+  - [[playbook-ai-native-project-lifecycle|AI-Native Project Lifecycle (6 Stages for Knowledge Work)]]
+  - [[playbook-committed-artifacts|Committed Artifacts Standard & Cold-Open Guarantee]]
+  - [[playbook-skills-certification-pipeline|Skills Certification Pipeline (Human Expert Gate)]]
+  - [[playbook-process-reflection-cadence|Dual Feedback Loops & Process Reflection Cadence]]
+  - [[playbook-ingesting-episodic-memory|Ingesting Episodic Memories (Meetings, Seminars & Transcripts)]]
+- **Obsidian Lifecycle Templates**:
+  - `template-intent.md` (Stage 1: Plan)
+  - `template-spec.md` (Stage 2: Design)
+  - `template-draft.md` (Stage 3: Build)
+  - `template-review.md` (Stage 4: Test)
+  - `template-feedback.md` (Stage 6: Maintain / Restart Loop)
+  - `template-reflection.md` (Process Loop)
+  - *(Standard memory templates: episodic-event, semantic-concept, semantic-source, reflective-perspective, working-primer, working-notebooklm).*
 
 ---
 
-## 🧠 2. Semantic Memory (`wiki/semantic/`)
-*Grounded world knowledge, structured concepts, verifiable facts, entities, and empirical evidence.*
+## 🔁 3. Process Reflections & Cadence Vault (`reflections/`)
+*The slow process loop auditing stage ROI, reviewer attention, and skill freshness.*
 
-### A. Core Concepts (`wiki/semantic/concepts/`)
-- [[compute-capacity-and-energy|Compute Capacity, GPUs & Energy Infrastructure]]: India's public GPU cloud initiatives, green energy integration, and data center geography.
-- [[digital-public-infrastructure-for-ai|DPI for AI]]: Extending Aadhaar/UPI/ONDC architecture into open datasets, compute, and foundational models.
-- [[ai-cybersecurity-and-critical-infrastructure|AI Cybersecurity & Critical Infrastructure Defense]]: Autonomous threat actors, exploit chaining, and safeguarding India's DPI and power grids.
-- [[ai-cognitive-revolution-and-human-agency|AI Cognitive Revolution & Human Agency]]: Macro-historical externalization of reasoning, cognitive deskilling vs augmentation, and education reform.
-- [[voice-ai-and-foundational-education-india|Voice AI & Foundational Numeracy/Literacy (FLN)]]: Automated speech assessment in vernacular classrooms and NIPUN Bharat.
-- [[neuroscience-ai-and-brain-computer-interfaces|Neuroscience, AI & Brain-Computer Interfaces (BCIs)]]: Neural decoding, bidirectional neuroprosthetics, and cognitive co-processors.
-- [[llm-internals-and-reward-hacking|LLM Internals, RLHF & Reward Hacking]]: Transformer attention mechanics, specification gaming, and safety trade-offs.
-- [[physical-ai-robotics-and-world-models|Physical AI, Robotics & World Models]]: Vision-Language-Action (VLA) models, sim-to-real gap, and industrial spatial intelligence.
-- [[genai-creativity-and-knowledge-work-economics|GenAI, Human Creativity & Knowledge Work Economics]]: Centaur workflows, commoditization of craft, and intellectual property.
-- [[it-bpo-workforce-automation|IT & BPO Workforce Automation]]: The structural transformation of India's tech services export sector.
-- [[indic-foundation-models|Indic Foundation Models & Datasets]]: Multilingual tokenization, low-resource preservation, and cultural alignment.
-- [[informal-economy-ai-enablement|Informal Economy & AI Enablement]]: Voice-first interfaces, vernacular commerce, and micro-entrepreneurship.
-- [[human-agency-and-ai-alignment|Human Agency & Civilizational AI Alignment]]: Autonomy, democratic discourse, and cognitive sovereignty.
-- [[bias-and-multilingual-fairness|Bias & Multilingual Fairness]]: Linguistic, caste, gender, and regional dataset balance.
-
-### B. Key Entities & Institutions (`wiki/semantic/entities/`)
-- [[bharatgen|BharatGen (IIT Bombay / DST)]] — India's government-funded sovereign multimodal LLM consortium.
-- [[indiaai-mission|IndiaAI Mission]] (MeitY) — ₹10,372 Crore national flagship AI mission.
-- [[bhashini|Bhashini (National Language Translation Mission)]]
-- [[niti-aayog-ai|NITI Aayog AI Initiatives]]
-- [[ai4bharat|AI4Bharat (IIT Madras)]]
-
-### C. Grounded Evidence Vault & Sources (`wiki/semantic/sources/`)
-- [[indiaai-mission-cabinet-approval-2024|Cabinet Approval of ₹10,372 Crore IndiaAI Mission (2024)]]
-- *(Additional research papers, gazette notifications, and benchmark reports populate here).*
-
-### D. Comparative Analyses (`wiki/semantic/comparisons/`)
-- [[india-vs-china-ai-strategy|India vs. China: AI Strategy & Compute Architecture]]: Centralized state compute & domestic silicon (Huawei Ascend, East-Data-West-Compute) vs. India's DPI & open model ecosystem.
-- [[india-vs-china-compute-strategy|India vs. China: AI Compute & Infrastructure Strategy]]
-- [[india-vs-us-ai-talent-pipelines|India vs. US: AI Talent, Brain Drain & Return Migration]]
-- [[india-vs-eu-ai-regulation|India vs. EU: AI Regulation vs. Digital Public Infrastructure]]
+- [Overview & Methodology](./reflections/README.md)
+- [Reflection Blueprint](./reflections/reflection-template.md)
+- [Q1 2026 Process Reflection](./reflections/2026-q1-study-group-reflection.md) — Launch of the AI-Native Project Hub.
 
 ---
 
-## ⚖️ 3. Reflective Memory (`wiki/reflective/`)
-*Dialectic matrices, multi-stakeholder debate maps, epistemological tensions, and consensus horizons.*
-
-| Topic / Dilemma | Perspective Map Page | Key Fault Lines & Stances |
-| :--- | :--- | :--- |
-| **Foundation Models vs Application Fine-Tuning** | [[india-frontier-models-vs-applications|India's Frontier Model Debate]] | Sovereign Frontier Training vs. Fine-Tuning Open Source on DPI |
-| **Impact of GenAI on Indian Tech Jobs** | [[ai-impact-on-indian-it-jobs|IT Services: Mass Displacement vs Augmented Productivity]] | Job contraction vs Value-chain climb & domestic software boom |
-| **AI Regulation: Precautionary vs Permissive** | [[ai-regulatory-framework-india|India's AI Governance Stance]] | EU-style AI Act vs US-style market innovation vs India DPI hybrid |
-| **AI Safety vs Accelerationism (Good vs Bad AI)** | [[good-vs-bad-ai-safety-and-acceleration|Good vs. Bad AI: Existential Safety vs Accelerative Proliferation]] | Extinction risk & compute gating vs Open-source democratization & techno-humanism |
-
----
-
-## ⚡ 4. Working Memory (`wiki/working/`)
-*Active retrieval sets, pedagogical primers, Socratic study guides, and external LLM bridge packs.*
-
-### A. Learning Modules & Socratic Primers (`wiki/working/learning/`)
-- [[primer-sovereign-compute-india|Executive Primer: Sovereign Compute in India]]: 10-minute briefing on GPU supply, the IndiaAI compute mission, and policy trade-offs.
-- [[curriculum-ai-and-future-of-humanity-india|Curriculum: 6-Week Masterclass on AI & India's Future]]: Interdisciplinary syllabus for think-tanks and university seminars.
-- [[socratic-guide-dpi-for-ai|Socratic Guide: Digital Public Infrastructure for AI]]: Interactive Q&A and thought experiments on open AI ecosystems.
-
-### B. Google NotebookLM Bridge Packs (`wiki/working/notebooklm/`)
-- [[pack-india-sovereign-ai|NotebookLM Pack: India Sovereign AI & Compute]]: Curated source bundle and audio overview guide on India's sovereign AI mission.
-- [[pack-labor-and-future-of-work|NotebookLM Pack: Labor Markets, IT Exports & AI]]: Grounding documents and podcast script notes for workforce transformation.
-
----
-
-## 🛠️ 5. Procedural Memory (`wiki/procedural/`)
-*Operational SOPs, research playbooks, agent skills, and reusable Obsidian note templates.*
-
-### A. Research Playbooks (`wiki/procedural/playbooks/`)
-- [[playbook-ingesting-episodic-memory|Playbook: Ingesting Episodic Memories (Meetings, Seminars & Field Episodes)]]
-
-### B. Reusable Templates (`wiki/procedural/templates/`)
-- `template-episodic-event.md`: Event, seminar, and interview template.
-- `template-semantic-source.md`: Atomic checkable claim sheet template.
-- `template-semantic-concept.md`: Foundational concept template.
-- `template-reflective-perspective.md`: Dialectic perspective matrix template.
-- `template-working-primer.md`: Pedagogical study primer template.
+## 🤖 4. Governed Agent Skills (`.agents/skills/`)
+- `ai-native-project-engine`: Orchestrates stages 1 through 6, scaffolding projects, and advancing committed files.
+- `literature-survey`: Multi-source literature survey, 4-factor scoring (relevance, depth, source quality, actionability), text archiving, and project matrix synthesis.
+- `skill-certification-pipeline`: Detects repeated corrections, extracts rules, and routes candidate skills to domain leads.
+- `ingest-and-source`: Ingestion of raw sources into episodic and semantic tiers.
+- `collect-and-maintain-perspectives`: Dialectic matrix and perspective mapping.
+- `ai-tutor-and-socratic-dialogue`: Interactive Socratic sparring partner.
+- `generate-learning-materials`: Generates curricula, workshop syllabi, and executive primers.
+- `notebooklm-sync-and-export`: Prepares source packs for Google NotebookLM and audio blueprints.
+- `lint-and-integrity`: Audits graph health, broken links, and frontmatter compliance.
