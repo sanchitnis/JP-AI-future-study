@@ -151,3 +151,8 @@ Append-only record of all ingestions, perspective maps, tutoring sessions, learn
 - **Dashboard Synchronization**:
   - Catalogued all new concepts, primers, packs, and project literature archives in master dashboard `index.md`.
 
+## [2026-09-16] ingest | AI in Science - Early Insights (2026)
+- Ingested `raw/literature/AI-in-Science.pdf` into Semantic Memory tier.
+- Created `wiki/semantic/sources/ai-in-science-early-insights.md` with key atomic claims: 1.8x–2.7x over-representation of AI usage in science, ~7 hours/week saved, LLM and specialized model complementarity, downstream physical bottlenecks, and the verification tax.
+- Linked to overarching concepts such as compute capacity, IndiaAI mission, and GenAI creativity/economics.
+- Updated `index.md` to catalog the new source.

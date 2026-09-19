@@ -43,6 +43,7 @@ Welcome to the **Master Hub** of the **JP AI Future Study Group** (Jnana Prabodh
 - **Grounded Evidence Vault & Evaluated Literature**:
   *(Primary downloads and evaluated summaries are centrally stored in `raw/literature/` and linked to `wiki/semantic/sources/`)*
   - [[indiaai-mission-cabinet-approval-2024|Cabinet Approval of ₹10,372 Crore IndiaAI Mission (2024)]]
+  - [[ai-in-science-early-insights|AI in Science: Early Insights (2026)]]
   - [[source-indiaai-mission-progress-2024-2026|IndiaAI Mission Implementation Progress (2024–2026)]] *(Score: 4.8/5.0)*
   - [[source-india-ai-governance-guidelines-2025|India AI Governance Guidelines 2025: Seven Sutras]] *(Score: 4.8/5.0)*
   - [[source-india-semiconductor-mission-hardware-sovereignty|India Semiconductor Mission & Hardware Sovereignty]] *(Score: 4.55/5.0)*

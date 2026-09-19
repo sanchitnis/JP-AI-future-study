@@ -24,7 +24,20 @@ title: JP AI Future Study Group - AI Native Hub Demo
 
 ---
 
-## 2. Step 1: Building the Collective Memory (The Wiki)
+## 2. Collaboration via Markdown & GitHub
+* **Markdown Format**: All content in this study group hub is written in Markdown (`.md`). It is a simple, lightweight text format that is easy to write, easy for AI to read, and renders beautifully on the web.
+* **GitHub Repository**: Our work is version-controlled and hosted on GitHub. This allows multiple experts to collaborate asynchronously without the chaos of scattered chat threads.
+  * 🔗 **Repository Link**: [JP-AI-future-study Repo](https://github.com/SanjayChitnis/JP-AI-future-study) *(Note: Update URL with actual GitHub username)*
+* **GitHub Pages (Live Demo)**: The markdown files are automatically converted into a live, readable website accessible to the public or stakeholders.
+  * 🔗 **Live Demo**: [Demo Presentation on GitHub Pages](https://sanjaychitnis.github.io/JP-AI-future-study/demo-presentation.html)
+* **Getting Started**:
+  * **Tooling**: We recommend using the [Obsidian](https://obsidian.md/) desktop app locally. It provides dynamic querying and an interactive visual map (Graph View) connecting seminar episodes to concepts.
+  * **Quick Navigation**: The `index.md` file serves as our Master Dashboard, linking to active projects, seminar recordings, and dialectic debate matrices.
+  * **Contribution**: Members can follow the AI-Native project lifecycle to draft policy memos or concept notes, capturing feedback and running automated expert peer reviews before finalizing.
+
+---
+
+## 3. Step 1: Building the Collective Memory (The Wiki)
 * **The Concept**: Inspired by Andrej Karpathy's "LLM Wiki" (a personal second brain), extended into a shared group brain.
 * **Why it is Needed**:
   * LLMs are memoryless: `Input + Context = Output`.
@@ -66,7 +79,7 @@ graph TD
 
 ---
 
-## 3. Step 2: From Memory to Action (AI-Native Projects)
+## 4. Step 2: From Memory to Action (AI-Native Projects)
 * **The Paradigm Shift**: Every member is now a "Boss of AI Agents." 
 * **The Process**: We use a 6-stage loop of committed artifacts to turn Wiki knowledge into deliverables.
 * **The 6 Stages**:
@@ -91,7 +104,7 @@ flowchart LR
 
 ---
 
-## 4. Future Steps: Creating Position Papers
+## 5. Future Steps: Creating Position Papers
 * **The Goal**: Transition from passive learning to active policy influence and thought leadership.
 * **Methodology**: We will use this AI-Native hub to launch multiple, concurrent whitepaper projects.
 * **Live Examples**:
